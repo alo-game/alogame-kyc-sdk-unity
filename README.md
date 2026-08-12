@@ -4,12 +4,13 @@ UPM package wrapping the native Android/iOS `alogame-kyc-sdk`. Native binaries
 are vendored inside the package (`Runtime/Plugins/`), so there is no JitPack,
 CocoaPods or SPM resolution at a game's build time.
 
-> **Status: Android verified on a physical device. iOS builds but has not been
-> run.** On a Galaxy S9 (Android 10, arm64): the SDK initialises, a real session
-> token is fetched from the dev backend, and `Show()` opens the native
-> `KycActivity` full-screen. iOS compiles to a correctly-embedded, correctly-
-> rpathed `.app` but nobody has launched it yet. See
-> [Verification](#verification).
+> **Status: both platforms verified on physical devices.** On an iPhone 13 Pro
+> (iOS 26.5.2) the full round trip works — SDK initialises, a real session token
+> is fetched, `Show()` runs and `OnResult` arrives back in C#. On a Galaxy S9
+> (Android 10) the SDK initialises, fetches a token and opens the native
+> `KycActivity` full-screen. See [Verification](#verification) for what each run
+> proved, and the three runtime bugs the runs caught that every build-time check
+> passed.
 
 ## Install
 
@@ -21,10 +22,10 @@ green console proves nothing.
 Package Manager → **+** → **Add package from git URL**:
 
 ```
-https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.1
+https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.2
 ```
 
-Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.1`). While iterating locally,
+Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.2`). While iterating locally,
 **Add package from disk** pointed at this `unity/` folder works too and makes the
 package mutable.
 
@@ -152,10 +153,12 @@ What was actually run, not inferred:
 | **Real Android APK** | `BuildPipeline.BuildPlayer`, minSdk 24, ARM64 | `Succeeded`, 0 errors. The dex contains `AlogameKycUnityBridge`, `AlogameKycFlatListener`, `AlogameKycSdk` and `KycActivity` — the AAR merged and the `.java` shim compiled under Gradle |
 | **Real iOS Xcode export + compile** | Unity iOS build, then `xcodebuild -sdk iphoneos` | `** BUILD SUCCEEDED **`, 0 errors |
 | The shipped `.app` | `lipo`, `otool -l`, `nm` | `AlogameKycKit.framework` embedded as **arm64** (device slice, not simulator); `LC_RPATH @executable_path/Frameworks` present on the binary that loads it; all 8 `_AlogameKyc_*` C symbols exported for `DllImport` |
-| **Real device run** | Galaxy S9, Android 10, arm64 | `Init()` succeeds, a real session token is fetched from the dev backend, `Show()` opens `vn.alogame.kycsdk.internal.ui.KycActivity` full-screen |
+| **Real device run — Android** | Galaxy S9, Android 10, arm64 | `Init()` succeeds, a real session token is fetched from the dev backend, `Show()` opens `vn.alogame.kycsdk.internal.ui.KycActivity` full-screen |
+| **Real device run — iOS** | iPhone 13 Pro, iOS 26.5.2, signed with automatic provisioning | Full round trip: `Init()`, token fetch, `Show()`, and `OnResult Success` delivered back to C#. No `dyld` error — the rpath work holds |
 
-Three real bugs were found this way and fixed, all of the kind no amount of
-reading catches — and the most serious one survived every build-time check:
+Four real bugs were found this way and fixed, all of the kind no amount of
+reading catches — and the two that mattered most survived every build-time
+check and only appeared on a device:
 
 - The embed step picked its framework slice by filesystem order, so it could
   have shipped the **simulator** binary in a device build. Slice selection is now
@@ -180,17 +183,39 @@ reading catches — and the most serious one survived every build-time check:
   now appends the coordinate to the generated Gradle project. Nothing at build
   time could have caught this — which is the entire argument for the device run.
 
+- **The vendored xcframework was missing its SPM resource bundle.** On iOS the
+  app launched, initialised and fetched a token, then died the moment `Show()`
+  drew the logo:
+
+  ```
+  AlogameKycKit/resource_bundle_accessor.swift:44:
+  Fatal error: unable to find bundle named AlogameKycKit_AlogameKycKit
+  ```
+
+  Not a wrapper bug at all — `ios/build-xcframework.sh` skipped the
+  resource-bundle step under a comment asserting the package declares no SPM
+  resources, which stopped being true when `Resources/logo-alo-white.png` was
+  added. **Every xcframework that script has produced is affected, including the
+  one behind the iOS SPM release**, so this is not Unity-specific. Fixed in that
+  script; it now also refuses to ship a build whose bundle is empty, because the
+  first attempt copied an empty placeholder from `BuildProductsPath` and turned a
+  loud crash into a silently missing logo.
+
 ## Known-unverified
 
-1. **iOS has not been run on a device.** The Android path is proven end to end;
-   iOS is proven only to build and link. The Android run is precisely what
-   exposed a crash that every build-time check passed, so treat the first iOS
-   launch the same way.
-2. **The OTP flow itself is unfinished on-device.** `Show()` opens the screen;
-   completing OTP and observing a terminal `OnResult` has not been walked
-   through end to end.
-3. **Simulator builds are untested.** The slice-selection code has a simulator
-   branch; only the device branch has been exercised.
+1. **The OTP flow has not been walked through by hand.** iOS returned
+   `OnResult Success`, but nobody has typed a code, hit a wrong code, or let a
+   token expire mid-flow. `OnSessionTokenNeeded` in particular has never fired
+   on a device.
+3. **The iOS Simulator is not a usable test path, and that is Unity's limit, not
+   this package's.** The simulator branch of the slice selection works — a build
+   logs `embedded the simulator slice (…)` and `xcodebuild -sdk iphonesimulator`
+   succeeds — but the resulting app will not launch on an Apple Silicon Mac:
+   Unity's own prebuilt `baselib.a` for the simulator is **x86_64 only**, while
+   modern simulator runtimes are arm64-native, so iOS rejects it with "This app
+   needs to be updated by the developer". Forcing `ARCHS=arm64` then fails at
+   link time (`symbol(s) not found for architecture arm64`) because Unity ships
+   no arm64 simulator libraries. Test iOS on a physical device.
 4. **`minSdk`.** Verified to build at 24, but the native Android SDK's own
    minimum is still an open item in `alogame-kyc-sdk-android/design.md`.
 

@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Info.plist</key>
+		<key>logo-alo-white.png</key>
 		<data>
-		+wCpEqwfv6nYUCR+mlNAHIb8rGs=
+		Bd7get1st4siRVlI0rTe+JclYgU=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>logo-alo-white.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2/Ow5OJfsGvgIcdnXlGEE+6NapTdlLlxzr+xkkEBGJI=
+			</data>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>
