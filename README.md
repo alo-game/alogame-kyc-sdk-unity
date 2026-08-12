@@ -22,10 +22,10 @@ green console proves nothing.
 Package Manager → **+** → **Add package from git URL**:
 
 ```
-https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.2
+https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.3
 ```
 
-Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.2`). While iterating locally,
+Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.3`). While iterating locally,
 **Add package from disk** pointed at this `unity/` folder works too and makes the
 package mutable.
 
@@ -154,7 +154,7 @@ What was actually run, not inferred:
 | **Real iOS Xcode export + compile** | Unity iOS build, then `xcodebuild -sdk iphoneos` | `** BUILD SUCCEEDED **`, 0 errors |
 | The shipped `.app` | `lipo`, `otool -l`, `nm` | `AlogameKycKit.framework` embedded as **arm64** (device slice, not simulator); `LC_RPATH @executable_path/Frameworks` present on the binary that loads it; all 8 `_AlogameKyc_*` C symbols exported for `DllImport` |
 | **Real device run — Android** | Galaxy S9, Android 10, arm64 | `Init()` succeeds, a real session token is fetched from the dev backend, `Show()` opens `vn.alogame.kycsdk.internal.ui.KycActivity` full-screen |
-| **Real device run — iOS** | iPhone 13 Pro, iOS 26.5.2, signed with automatic provisioning | Full round trip: `Init()`, token fetch, `Show()`, and `OnResult Success` delivered back to C#. No `dyld` error — the rpath work holds |
+| **Real device run — iOS** | iPhone 13 Pro, iOS 26.5.2, signed with automatic provisioning | **The whole flow, by hand, on a fresh uid**: `Init()`, token fetch (`xmdtCompleted=False`), `Show()` opens the native screen, the form and OTP are completed, and `OnResult Success` arrives back in C#. No `dyld` error, no fatal error — the rpath and resource-bundle work both hold |
 
 Four real bugs were found this way and fixed, all of the kind no amount of
 reading catches — and the two that mattered most survived every build-time
@@ -203,10 +203,15 @@ check and only appeared on a device:
 
 ## Known-unverified
 
-1. **The OTP flow has not been walked through by hand.** iOS returned
-   `OnResult Success`, but nobody has typed a code, hit a wrong code, or let a
-   token expire mid-flow. `OnSessionTokenNeeded` in particular has never fired
-   on a device.
+1. **Only the happy path has been walked.** The full flow — form, OTP, terminal
+   `OnResult Success` — is confirmed on iOS. What has never been exercised on a
+   device: a wrong OTP code, an expired token mid-flow (so `OnSessionTokenNeeded`
+   has never actually fired), cancellation, and the Android screen past the point
+   where it opens.
+
+   Note that a uid which has already completed XMDT makes `Show()` short-circuit
+   straight to `Success` without opening anything — correct behaviour, but it
+   means each uid only exercises the flow once. Use a fresh uid per attempt.
 3. **The iOS Simulator is not a usable test path, and that is Unity's limit, not
    this package's.** The simulator branch of the slice selection works — a build
    logs `embedded the simulator slice (…)` and `xcodebuild -sdk iphonesimulator`

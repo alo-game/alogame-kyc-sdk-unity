@@ -1,6 +1,6 @@
 {
   "name": "com.alogame.kycsdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "Alogame KYC SDK",
   "description": "Native (no WebView) identity-verification (XMDT) SDK for copub games. Wraps the native Android/iOS alogame-kyc-sdk; no manual Gradle or Xcode editing required.",
   "unity": "2021.3",
