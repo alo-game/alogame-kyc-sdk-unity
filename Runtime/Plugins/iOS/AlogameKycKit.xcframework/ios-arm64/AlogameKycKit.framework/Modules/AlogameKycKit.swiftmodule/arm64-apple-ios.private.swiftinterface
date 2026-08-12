@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name AlogameKycKit
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import SafariServices
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum AlogameKycEnv {
+  case dev
+  case prod
+  public static func == (a: AlogameKycKit.AlogameKycEnv, b: AlogameKycKit.AlogameKycEnv) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct AlogameKycConfig {
+  public let env: AlogameKycKit.AlogameKycEnv
+  public let tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)?
+  public init(env: AlogameKycKit.AlogameKycEnv, tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)? = nil)
+}
+public enum AlogameKycFailReason : Swift.String {
+  case notInitialized
+  case noGameRole
+  case sessionUnavailable
+  case sessionInvalid
+  case otpAttemptsExceeded
+  case otpUnavailable
+  case rateLimited
+  case serviceUnavailable
+  case unknownError
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol AlogameKycListener : AnyObject {
+  func onResult(_ result: AlogameKycKit.AlogameKycResult)
+  func onSessionTokenNeeded(uid: Swift.String)
+}
+extension AlogameKycKit.AlogameKycListener {
+  public func onSessionTokenNeeded(uid: Swift.String)
+}
+public enum AlogameKycResult {
+  case success
+  case failed(reason: AlogameKycKit.AlogameKycFailReason, message: Swift.String?)
+  case cancelled
+}
+@_hasMissingDesignatedInitializers final public class AlogameKycSdk {
+  public static let shared: AlogameKycKit.AlogameKycSdk
+  final public func initialize(_ config: AlogameKycKit.AlogameKycConfig)
+  final public func setGameRole(uid: Swift.String, sessionToken: Swift.String, serverId: Swift.String? = nil, roleId: Swift.String? = nil)
+  final public func setPrefill(_ fullName: Swift.String?)
+  final public var isVerified: Swift.Bool {
+    get
+  }
+  final public func provideSessionToken(_ token: Swift.String)
+  final public func abortPendingToken()
+  final public func show(from viewController: UIKit.UIViewController, listener: any AlogameKycKit.AlogameKycListener)
+  @objc deinit
+}
+extension AlogameKycKit.AlogameKycEnv : Swift.Equatable {}
+extension AlogameKycKit.AlogameKycEnv : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycFailReason : Swift.Equatable {}
+extension AlogameKycKit.AlogameKycFailReason : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycFailReason : Swift.RawRepresentable {}

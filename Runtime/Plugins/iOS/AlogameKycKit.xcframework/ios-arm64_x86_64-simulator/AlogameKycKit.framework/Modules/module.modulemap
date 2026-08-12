@@ -1,0 +1,4 @@
+framework module AlogameKycKit {
+header "AlogameKycKit-Swift.h"
+export *
+}

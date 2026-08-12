@@ -1,0 +1,14 @@
+{
+    "name": "Alogame.KycSdk",
+    "rootNamespace": "Alogame.KycSdk",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

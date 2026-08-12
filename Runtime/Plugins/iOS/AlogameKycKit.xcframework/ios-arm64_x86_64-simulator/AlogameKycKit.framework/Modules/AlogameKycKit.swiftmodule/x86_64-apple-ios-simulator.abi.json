@@ -1,0 +1,2595 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AlogameKycKit",
+    "printedName": "AlogameKycKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycEnv",
+        "printedName": "AlogameKycEnv",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycEnv.Type) -> AlogameKycKit.AlogameKycEnv",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycEnv",
+                    "printedName": "AlogameKycKit.AlogameKycEnv",
+                    "usr": "s:13AlogameKycKit0aB3EnvO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycEnv.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycEnv",
+                        "printedName": "AlogameKycKit.AlogameKycEnv",
+                        "usr": "s:13AlogameKycKit0aB3EnvO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB3EnvO3devyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB3EnvO3devyA2CmF",
+            "moduleName": "AlogameKycKit"
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycEnv.Type) -> AlogameKycKit.AlogameKycEnv",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycEnv",
+                    "printedName": "AlogameKycKit.AlogameKycEnv",
+                    "usr": "s:13AlogameKycKit0aB3EnvO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycEnv.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycEnv",
+                        "printedName": "AlogameKycKit.AlogameKycEnv",
+                        "usr": "s:13AlogameKycKit0aB3EnvO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB3EnvO4prodyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB3EnvO4prodyA2CmF",
+            "moduleName": "AlogameKycKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycEnv",
+                "printedName": "AlogameKycKit.AlogameKycEnv",
+                "usr": "s:13AlogameKycKit0aB3EnvO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycEnv",
+                "printedName": "AlogameKycKit.AlogameKycEnv",
+                "usr": "s:13AlogameKycKit0aB3EnvO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3EnvO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13AlogameKycKit0aB3EnvO2eeoiySbAC_ACtFZ",
+            "moduleName": "AlogameKycKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB3EnvO9hashValueSivp",
+            "mangledName": "$s13AlogameKycKit0aB3EnvO9hashValueSivp",
+            "moduleName": "AlogameKycKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB3EnvO9hashValueSivg",
+                "mangledName": "$s13AlogameKycKit0aB3EnvO9hashValueSivg",
+                "moduleName": "AlogameKycKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3EnvO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s13AlogameKycKit0aB3EnvO4hash4intoys6HasherVz_tF",
+            "moduleName": "AlogameKycKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13AlogameKycKit0aB3EnvO",
+        "mangledName": "$s13AlogameKycKit0aB3EnvO",
+        "moduleName": "AlogameKycKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycConfig",
+        "printedName": "AlogameKycConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "env",
+            "printedName": "env",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycEnv",
+                "printedName": "AlogameKycKit.AlogameKycEnv",
+                "usr": "s:13AlogameKycKit0aB3EnvO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB6ConfigV3envAA0aB3EnvOvp",
+            "mangledName": "$s13AlogameKycKit0aB6ConfigV3envAA0aB3EnvOvp",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycEnv",
+                    "printedName": "AlogameKycKit.AlogameKycEnv",
+                    "usr": "s:13AlogameKycKit0aB3EnvO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB6ConfigV3envAA0aB3EnvOvg",
+                "mangledName": "$s13AlogameKycKit0aB6ConfigV3envAA0aB3EnvOvg",
+                "moduleName": "AlogameKycKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenProvider",
+            "printedName": "tokenProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, @escaping (Swift.String?) -> ()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, @escaping (Swift.String?) -> ()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, (Swift.String?) -> ())",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Swift.String?) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB6ConfigV13tokenProviderySS_ySSSgctcSgvp",
+            "mangledName": "$s13AlogameKycKit0aB6ConfigV13tokenProviderySS_ySSSgctcSgvp",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, @escaping (Swift.String?) -> ()) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, @escaping (Swift.String?) -> ()) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, (Swift.String?) -> ())",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(Swift.String?) -> ()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Swift.String?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB6ConfigV13tokenProviderySS_ySSSgctcSgvg",
+                "mangledName": "$s13AlogameKycKit0aB6ConfigV13tokenProviderySS_ySSSgctcSgvg",
+                "moduleName": "AlogameKycKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(env:tokenProvider:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycConfig",
+                "printedName": "AlogameKycKit.AlogameKycConfig",
+                "usr": "s:13AlogameKycKit0aB6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycEnv",
+                "printedName": "AlogameKycKit.AlogameKycEnv",
+                "usr": "s:13AlogameKycKit0aB3EnvO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, @escaping (Swift.String?) -> ()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, @escaping (Swift.String?) -> ()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, (Swift.String?) -> ())",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Swift.String?) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13AlogameKycKit0aB6ConfigV3env13tokenProviderAcA0aB3EnvO_ySS_ySSSgctcSgtcfc",
+            "mangledName": "$s13AlogameKycKit0aB6ConfigV3env13tokenProviderAcA0aB3EnvO_ySS_ySSSgctcSgtcfc",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13AlogameKycKit0aB6ConfigV",
+        "mangledName": "$s13AlogameKycKit0aB6ConfigV",
+        "moduleName": "AlogameKycKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycFailReason",
+        "printedName": "AlogameKycFailReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInitialized",
+            "printedName": "notInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO14notInitializedyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO14notInitializedyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noGameRole",
+            "printedName": "noGameRole",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO10noGameRoleyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO10noGameRoleyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sessionUnavailable",
+            "printedName": "sessionUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO18sessionUnavailableyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO18sessionUnavailableyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sessionInvalid",
+            "printedName": "sessionInvalid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO14sessionInvalidyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO14sessionInvalidyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otpAttemptsExceeded",
+            "printedName": "otpAttemptsExceeded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO19otpAttemptsExceededyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO19otpAttemptsExceededyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otpUnavailable",
+            "printedName": "otpUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO14otpUnavailableyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO14otpUnavailableyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rateLimited",
+            "printedName": "rateLimited",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO11rateLimitedyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO11rateLimitedyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceUnavailable",
+            "printedName": "serviceUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO18serviceUnavailableyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO18serviceUnavailableyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycFailReason.Type) -> AlogameKycKit.AlogameKycFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycFailReason",
+                        "printedName": "AlogameKycKit.AlogameKycFailReason",
+                        "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO12unknownErroryA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO12unknownErroryA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AlogameKycKit.AlogameKycFailReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycFailReason",
+                    "printedName": "AlogameKycKit.AlogameKycFailReason",
+                    "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO8rawValueACSgSS_tcfc",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO8rawValueACSgSS_tcfc",
+            "moduleName": "AlogameKycKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB10FailReasonO8rawValueSSvp",
+            "mangledName": "$s13AlogameKycKit0aB10FailReasonO8rawValueSSvp",
+            "moduleName": "AlogameKycKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB10FailReasonO8rawValueSSvg",
+                "mangledName": "$s13AlogameKycKit0aB10FailReasonO8rawValueSSvg",
+                "moduleName": "AlogameKycKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13AlogameKycKit0aB10FailReasonO",
+        "mangledName": "$s13AlogameKycKit0aB10FailReasonO",
+        "moduleName": "AlogameKycKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycListener",
+        "printedName": "AlogameKycListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onResult",
+            "printedName": "onResult(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycResult",
+                "printedName": "AlogameKycKit.AlogameKycResult",
+                "usr": "s:13AlogameKycKit0aB6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB8ListenerP8onResultyyAA0abF0OF",
+            "mangledName": "$s13AlogameKycKit0aB8ListenerP8onResultyyAA0abF0OF",
+            "moduleName": "AlogameKycKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AlogameKycKit.AlogameKycListener>",
+            "sugared_genericSig": "<Self where Self : AlogameKycKit.AlogameKycListener>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSessionTokenNeeded",
+            "printedName": "onSessionTokenNeeded(uid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB8ListenerP20onSessionTokenNeeded3uidySS_tF",
+            "mangledName": "$s13AlogameKycKit0aB8ListenerP20onSessionTokenNeeded3uidySS_tF",
+            "moduleName": "AlogameKycKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AlogameKycKit.AlogameKycListener>",
+            "sugared_genericSig": "<Self where Self : AlogameKycKit.AlogameKycListener>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSessionTokenNeeded",
+            "printedName": "onSessionTokenNeeded(uid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB8ListenerPAAE20onSessionTokenNeeded3uidySS_tF",
+            "mangledName": "$s13AlogameKycKit0aB8ListenerPAAE20onSessionTokenNeeded3uidySS_tF",
+            "moduleName": "AlogameKycKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AlogameKycKit.AlogameKycListener>",
+            "sugared_genericSig": "<Self where Self : AlogameKycKit.AlogameKycListener>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13AlogameKycKit0aB8ListenerP",
+        "mangledName": "$s13AlogameKycKit0aB8ListenerP",
+        "moduleName": "AlogameKycKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycResult",
+        "printedName": "AlogameKycResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycResult.Type) -> AlogameKycKit.AlogameKycResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycResult",
+                    "printedName": "AlogameKycKit.AlogameKycResult",
+                    "usr": "s:13AlogameKycKit0aB6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResult",
+                        "printedName": "AlogameKycKit.AlogameKycResult",
+                        "usr": "s:13AlogameKycKit0aB6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB6ResultO7successyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB6ResultO7successyA2CmF",
+            "moduleName": "AlogameKycKit"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycResult.Type) -> (AlogameKycKit.AlogameKycFailReason, Swift.String?) -> AlogameKycKit.AlogameKycResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AlogameKycKit.AlogameKycFailReason, Swift.String?) -> AlogameKycKit.AlogameKycResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResult",
+                        "printedName": "AlogameKycKit.AlogameKycResult",
+                        "usr": "s:13AlogameKycKit0aB6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: AlogameKycKit.AlogameKycFailReason, message: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AlogameKycFailReason",
+                            "printedName": "AlogameKycKit.AlogameKycFailReason",
+                            "usr": "s:13AlogameKycKit0aB10FailReasonO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResult",
+                        "printedName": "AlogameKycKit.AlogameKycResult",
+                        "usr": "s:13AlogameKycKit0aB6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB6ResultO6failedyAcA0aB10FailReasonO_SSSgtcACmF",
+            "mangledName": "$s13AlogameKycKit0aB6ResultO6failedyAcA0aB10FailReasonO_SSSgtcACmF",
+            "moduleName": "AlogameKycKit"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycResult.Type) -> AlogameKycKit.AlogameKycResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycResult",
+                    "printedName": "AlogameKycKit.AlogameKycResult",
+                    "usr": "s:13AlogameKycKit0aB6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResult",
+                        "printedName": "AlogameKycKit.AlogameKycResult",
+                        "usr": "s:13AlogameKycKit0aB6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB6ResultO9cancelledyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB6ResultO9cancelledyA2CmF",
+            "moduleName": "AlogameKycKit"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13AlogameKycKit0aB6ResultO",
+        "mangledName": "$s13AlogameKycKit0aB6ResultO",
+        "moduleName": "AlogameKycKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AlogameKycSdk",
+        "printedName": "AlogameKycSdk",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycSdk",
+                "printedName": "AlogameKycKit.AlogameKycSdk",
+                "usr": "s:13AlogameKycKit0aB3SdkC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB3SdkC6sharedACvpZ",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC6sharedACvpZ",
+            "moduleName": "AlogameKycKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycSdk",
+                    "printedName": "AlogameKycKit.AlogameKycSdk",
+                    "usr": "s:13AlogameKycKit0aB3SdkC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB3SdkC6sharedACvgZ",
+                "mangledName": "$s13AlogameKycKit0aB3SdkC6sharedACvgZ",
+                "moduleName": "AlogameKycKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycConfig",
+                "printedName": "AlogameKycKit.AlogameKycConfig",
+                "usr": "s:13AlogameKycKit0aB6ConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC10initializeyyAA0aB6ConfigVF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC10initializeyyAA0aB6ConfigVF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGameRole",
+            "printedName": "setGameRole(uid:sessionToken:serverId:roleId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC11setGameRole3uid12sessionToken8serverId04roleL0ySS_S2SSgAItF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC11setGameRole3uid12sessionToken8serverId04roleL0ySS_S2SSgAItF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPrefill",
+            "printedName": "setPrefill(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC10setPrefillyySSSgF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC10setPrefillyySSSgF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isVerified",
+            "printedName": "isVerified",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13AlogameKycKit0aB3SdkC10isVerifiedSbvp",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC10isVerifiedSbvp",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13AlogameKycKit0aB3SdkC10isVerifiedSbvg",
+                "mangledName": "$s13AlogameKycKit0aB3SdkC10isVerifiedSbvg",
+                "moduleName": "AlogameKycKit",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "provideSessionToken",
+            "printedName": "provideSessionToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC19provideSessionTokenyySSF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC19provideSessionTokenyySSF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "abortPendingToken",
+            "printedName": "abortPendingToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC17abortPendingTokenyyF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC17abortPendingTokenyyF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(from:listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AlogameKycListener",
+                "printedName": "any AlogameKycKit.AlogameKycListener",
+                "usr": "s:13AlogameKycKit0aB8ListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13AlogameKycKit0aB3SdkC4show4from8listenerySo16UIViewControllerC_AA0aB8Listener_ptF",
+            "mangledName": "$s13AlogameKycKit0aB3SdkC4show4from8listenerySo16UIViewControllerC_AA0aB8Listener_ptF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13AlogameKycKit0aB3SdkC",
+        "mangledName": "$s13AlogameKycKit0aB3SdkC",
+        "moduleName": "AlogameKycKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AlogameKycKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 307,
+      "length": 29,
+      "value": "\"AlogameKycKit_AlogameKycKit\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "Array",
+      "offset": 983,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1510,
+      "length": 9,
+      "value": "\".bundle\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1662,
+      "length": 57,
+      "value": "\"unable to find bundle named AlogameKycKit_AlogameKycKit\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1151,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1766,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1795,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 859,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 920,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 960,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "StringLiteral",
+      "offset": 2261,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "StringLiteral",
+      "offset": 2309,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "StringLiteral",
+      "offset": 2336,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2369,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "Dictionary",
+      "offset": 2543,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "Array",
+      "offset": 2765,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2792,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "StringLiteral",
+      "offset": 2980,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "Array",
+      "offset": 3019,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3571,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Security\/CaptureGuard.swift",
+      "kind": "Array",
+      "offset": 1210,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1226,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1684,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/ConsentView.swift",
+      "kind": "Dictionary",
+      "offset": 936,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 1878,
+      "length": 8,
+      "value": "\"0B0B0E\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2011,
+      "length": 8,
+      "value": "\"17171D\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2137,
+      "length": 8,
+      "value": "\"0F0F14\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2255,
+      "length": 8,
+      "value": "\"2A2A33\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2385,
+      "length": 8,
+      "value": "\"22222B\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2511,
+      "length": 8,
+      "value": "\"121217\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2627,
+      "length": 8,
+      "value": "\"3A3A45\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2729,
+      "length": 8,
+      "value": "\"5B5F70\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2828,
+      "length": 8,
+      "value": "\"1D64F2\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 2947,
+      "length": 8,
+      "value": "\"4C8CFF\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3047,
+      "length": 8,
+      "value": "\"E7E8ED\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3151,
+      "length": 8,
+      "value": "\"8B8FA0\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3280,
+      "length": 8,
+      "value": "\"C9CBD4\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3329,
+      "length": 8,
+      "value": "\"1D64F2\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3433,
+      "length": 8,
+      "value": "\"E5484D\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 3561,
+      "length": 8,
+      "value": "\"28C76F\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3650,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3702,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3758,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3829,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3897,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4042,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4248,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4547,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4984,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5058,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5127,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "FloatLiteral",
+      "offset": 5203,
+      "length": 3,
+      "value": "9.5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5359,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5488,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5642,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5735,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5809,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "FloatLiteral",
+      "offset": 5883,
+      "length": 4,
+      "value": "12.5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5969,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "FloatLiteral",
+      "offset": 6045,
+      "length": 4,
+      "value": "12.5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "FloatLiteral",
+      "offset": 6124,
+      "length": 4,
+      "value": "14.5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6200,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6273,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6369,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6416,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6820,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6863,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6904,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6943,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6980,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7017,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7055,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7094,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7306,
+      "length": 2,
+      "value": "52"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7348,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7388,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7429,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7472,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7518,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7559,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7603,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7650,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7921,
+      "length": 3,
+      "value": "880"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9736,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9742,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9781,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9787,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13336,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4282,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "kind": "StringLiteral",
+      "offset": 4472,
+      "length": 12,
+      "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "kind": "StringLiteral",
+      "offset": 4581,
+      "length": 18,
+      "value": "\"Asia\/Ho_Chi_Minh\""
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "kind": "Array",
+      "offset": 21715,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2495,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "kind": "Array",
+      "offset": 2563,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2643,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3804,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "kind": "Array",
+      "offset": 1038,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1283,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1357,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
+      "kind": "Dictionary",
+      "offset": 778,
+      "length": 3209,
+      "value": "[(\"title\", \"Xác minh danh tính\"), (\"badge.required\", \"BẮT BUỘC\"), (\"reason.required\", \"Vui lòng hoàn thành xác minh danh tính trước khi vào game. Thông tin của bạn chỉ dùng để định danh tài khoản theo quy định.\"), (\"reason.required.compact\", \"Hoàn thành xác minh trước khi vào game. Chỉ mất khoảng 1 phút.\"), (\"reason.optional\", \"Xác minh danh tính theo quy định hiện hành.\"), (\"field.fullName.label\", \"HỌ VÀ TÊN\"), (\"field.fullName.hint\", \"Đúng như trên CCCD\/hộ chiếu\"), (\"field.fullName.placeholder\", \"Họ và tên theo CCCD *\"), (\"field.dob.label\", \"NGÀY SINH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Ngày sinh (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"SỐ ĐIỆN THOẠI\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Số điện thoại *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (không bắt buộc)\"), (\"action.sendCode\", \"Gửi mã\"), (\"action.sendCode.disabled\", \"Số điện thoại chưa hợp lệ.\"), (\"action.save\", \"Xác minh và vào game\"), (\"action.retry\", \"Thử lại\"), (\"action.exitGame\", \"Thoát game\"), (\"action.changePhone\", \"Đổi số\"), (\"action.pasteCode\", \"Dán mã\"), (\"action.done\", \"Xong\"), (\"action.resend\", \"Gửi lại mã\"), (\"action.resend.countdown\", \"Gửi lại mã ({seconds}s)\"), (\"otp.title\", \"Nhập mã xác minh\"), (\"otp.sentTo\", \"Mã đã gửi tới {phone}\"), (\"otp.incorrect\", \"Mã không đúng. Còn {n} lần thử.\"), (\"otp.expired\", \"Mã đã hết hạn. Vui lòng gửi lại.\"), (\"otp.exhausted\", \"Bạn đã gửi lại mã tối đa số lần cho phép.\"), (\"otp.support\", \"Không nhận được mã? Liên hệ hỗ trợ\"), (\"consent.parent\", \"Tôi đã đọc và đồng ý với các điều khoản\"), (\"error.consentRequired\", \"Cần đồng ý điều khoản để tiếp tục.\"), (\"error.underAge\", \"Dịch vụ dành cho người từ {minimumAge} tuổi trở lên, nên thông tin của bạn không được lưu.\"), (\"error.phoneTaken\", \"Số điện thoại này đã được liên kết với một tài khoản khác trong game.\"), (\"error.network\", \"Không có kết nối mạng.\"), (\"error.service\", \"Không kết nối được hệ thống xác minh.\"), (\"confirm.exit.required\", \"Bạn cần hoàn tất xác minh để vào game. Thoát game?\"), (\"confirm.exit.optional\", \"Thông tin bạn đã nhập sẽ không được lưu. Đóng?\"), (\"success\", \"Xác minh thành công\")]"
+    }
+  ]
+}

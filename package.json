@@ -1,0 +1,17 @@
+{
+  "name": "com.alogame.kycsdk",
+  "version": "0.1.0",
+  "displayName": "Alogame KYC SDK",
+  "description": "Native (no WebView) identity-verification (XMDT) SDK for copub games. Wraps the native Android/iOS alogame-kyc-sdk; no manual Gradle or Xcode editing required.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Alogame"
+  },
+  "samples": [
+    {
+      "displayName": "Reference Scene",
+      "description": "Minimal integration: paste a session token, press Show, observe the result callback.",
+      "path": "Samples~/ReferenceScene"
+    }
+  ]
+}
