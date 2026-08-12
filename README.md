@@ -4,14 +4,12 @@ UPM package wrapping the native Android/iOS `alogame-kyc-sdk`. Native binaries
 are vendored inside the package (`Runtime/Plugins/`), so there is no JitPack,
 CocoaPods or SPM resolution at a game's build time.
 
-> **Status: builds end to end on both platforms; not yet run on a device.**
-> A real APK was produced from a real Unity project and contains both the native
-> SDK and this package's Java shim. A real Xcode project was exported, compiled
-> with `** BUILD SUCCEEDED **`, and the resulting `.app` has the framework
-> embedded as the arm64 device slice with a working `@rpath` and all eight
-> `@_cdecl` entry points exported. See [Verification](#verification) for exactly
-> what was checked and how. What remains is running the flow on a physical
-> device — installing, pressing the button, completing OTP.
+> **Status: Android verified on a physical device. iOS builds but has not been
+> run.** On a Galaxy S9 (Android 10, arm64): the SDK initialises, a real session
+> token is fetched from the dev backend, and `Show()` opens the native
+> `KycActivity` full-screen. iOS compiles to a correctly-embedded, correctly-
+> rpathed `.app` but nobody has launched it yet. See
+> [Verification](#verification).
 
 ## Install
 
@@ -23,10 +21,10 @@ green console proves nothing.
 Package Manager → **+** → **Add package from git URL**:
 
 ```
-https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.0
+https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.1
 ```
 
-Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.0`). While iterating locally,
+Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.1`). While iterating locally,
 **Add package from disk** pointed at this `unity/` folder works too and makes the
 package mutable.
 
@@ -154,9 +152,10 @@ What was actually run, not inferred:
 | **Real Android APK** | `BuildPipeline.BuildPlayer`, minSdk 24, ARM64 | `Succeeded`, 0 errors. The dex contains `AlogameKycUnityBridge`, `AlogameKycFlatListener`, `AlogameKycSdk` and `KycActivity` — the AAR merged and the `.java` shim compiled under Gradle |
 | **Real iOS Xcode export + compile** | Unity iOS build, then `xcodebuild -sdk iphoneos` | `** BUILD SUCCEEDED **`, 0 errors |
 | The shipped `.app` | `lipo`, `otool -l`, `nm` | `AlogameKycKit.framework` embedded as **arm64** (device slice, not simulator); `LC_RPATH @executable_path/Frameworks` present on the binary that loads it; all 8 `_AlogameKyc_*` C symbols exported for `DllImport` |
+| **Real device run** | Galaxy S9, Android 10, arm64 | `Init()` succeeds, a real session token is fetched from the dev backend, `Show()` opens `vn.alogame.kycsdk.internal.ui.KycActivity` full-screen |
 
-Two real bugs were found this way and fixed, both of the kind no amount of
-reading catches:
+Three real bugs were found this way and fixed, all of the kind no amount of
+reading catches — and the most serious one survived every build-time check:
 
 - The embed step picked its framework slice by filesystem order, so it could
   have shipped the **simulator** binary in a device build. Slice selection is now
@@ -167,15 +166,32 @@ reading catches:
   build confirmed the binary carrying the `@rpath` load command is
   `UnityFramework`, not the app executable.
 
+- **Missing Kotlin stdlib — the one that mattered.** The APK built, installed and
+  launched cleanly, then died on the first SDK call:
+
+  ```
+  java.lang.NoClassDefFoundError: kotlin.enums.EnumEntriesKt
+    at vn.alogame.kycsdk.AlogameKycEnv.<clinit>
+  ```
+
+  The AAR is vendored as a plain file, so it carries no POM and Gradle never
+  learns its transitive dependencies; the SDK's Kotlin enums need
+  `kotlin-stdlib` 1.9+ at runtime. `Editor/AlogameKycAndroidPostprocessBuild.cs`
+  now appends the coordinate to the generated Gradle project. Nothing at build
+  time could have caught this — which is the entire argument for the device run.
+
 ## Known-unverified
 
-1. **Nothing has run on a physical device.** Everything above is build-time.
-   The flow itself — screen opens, OTP completes, `OnResult` arrives — is
-   unproven, and the Cocos plugin in this repo is a standing reminder that a
-   clean build can still crash on the first bridge call.
-2. **Simulator builds are untested.** The slice-selection code has a simulator
+1. **iOS has not been run on a device.** The Android path is proven end to end;
+   iOS is proven only to build and link. The Android run is precisely what
+   exposed a crash that every build-time check passed, so treat the first iOS
+   launch the same way.
+2. **The OTP flow itself is unfinished on-device.** `Show()` opens the screen;
+   completing OTP and observing a terminal `OnResult` has not been walked
+   through end to end.
+3. **Simulator builds are untested.** The slice-selection code has a simulator
    branch; only the device branch has been exercised.
-3. **`minSdk`.** Verified to build at 24, but the native Android SDK's own
+4. **`minSdk`.** Verified to build at 24, but the native Android SDK's own
    minimum is still an open item in `alogame-kyc-sdk-android/design.md`.
 
 ### A note on `.meta` files
