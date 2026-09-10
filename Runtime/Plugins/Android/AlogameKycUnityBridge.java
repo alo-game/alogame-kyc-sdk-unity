@@ -2,6 +2,7 @@ package vn.alogame.kycsdk.unity;
 
 import android.app.Activity;
 
+import vn.alogame.kycsdk.AlogameKycBrand;
 import vn.alogame.kycsdk.AlogameKycConfig;
 import vn.alogame.kycsdk.AlogameKycEnv;
 import vn.alogame.kycsdk.AlogameKycListener;
@@ -31,17 +32,20 @@ public final class AlogameKycUnityBridge {
     private AlogameKycUnityBridge() { }
 
     /**
-     * @param env "prod" selects production; anything else (including null) selects dev.
-     *            Deliberately fail-safe toward dev — a typo must never silently
-     *            point a test build at the production identity backend.
+     * @param env   "prod" selects production; anything else (including null) selects dev.
+     *              Deliberately fail-safe toward dev — a typo must never silently
+     *              point a test build at the production identity backend.
+     * @param brand "oeg" selects the OEG header logo; anything else (including null)
+     *              selects alo — cosmetic only, no effect on env/endpoint selection.
      */
-    public static void init(Activity activity, String env) {
-        AlogameKycEnv resolved = "prod".equals(env) ? AlogameKycEnv.PROD : AlogameKycEnv.DEV;
+    public static void init(Activity activity, String env, String brand) {
+        AlogameKycEnv resolvedEnv = "prod".equals(env) ? AlogameKycEnv.PROD : AlogameKycEnv.DEV;
+        AlogameKycBrand resolvedBrand = "oeg".equals(brand) ? AlogameKycBrand.OEG : AlogameKycBrand.ALO;
         // tokenProvider is always null: a C# delegate cannot survive as a live
         // native callback across JNI. Token refresh goes through
         // AlogameKycFlatListener.onSessionTokenNeeded instead — the path the
         // native SDK documents specifically for bridge/engine integrations.
-        AlogameKycSdk.INSTANCE.init(activity.getApplicationContext(), new AlogameKycConfig(resolved, null));
+        AlogameKycSdk.INSTANCE.init(activity.getApplicationContext(), new AlogameKycConfig(resolvedEnv, null, resolvedBrand));
     }
 
     public static void setGameRole(String uid, String sessionToken, String serverId, String roleId) {

@@ -12,19 +12,29 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum AlogameKycEnv {
+@objc public enum AlogameKycEnv : Swift.Int {
   case dev
   case prod
-  public static func == (a: AlogameKycKit.AlogameKycEnv, b: AlogameKycKit.AlogameKycEnv) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum AlogameKycBrand : Swift.Int {
+  case alo
+  case oeg
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
 public struct AlogameKycConfig {
   public let env: AlogameKycKit.AlogameKycEnv
   public let tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)?
-  public init(env: AlogameKycKit.AlogameKycEnv, tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)? = nil)
+  public let brand: AlogameKycKit.AlogameKycBrand
+  public init(env: AlogameKycKit.AlogameKycEnv, tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)? = nil, brand: AlogameKycKit.AlogameKycBrand = .alo)
 }
 public enum AlogameKycFailReason : Swift.String {
   case notInitialized
@@ -42,6 +52,27 @@ public enum AlogameKycFailReason : Swift.String {
     get
   }
 }
+@objc public enum AlogameKycFailReasonCode : Swift.Int {
+  case notInitialized
+  case noGameRole
+  case sessionUnavailable
+  case sessionInvalid
+  case otpAttemptsExceeded
+  case otpUnavailable
+  case rateLimited
+  case serviceUnavailable
+  case unknownError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AlogameKycKit.AlogameKycFailReason {
+  public var objcCode: AlogameKycKit.AlogameKycFailReasonCode {
+    get
+  }
+}
 public protocol AlogameKycListener : AnyObject {
   func onResult(_ result: AlogameKycKit.AlogameKycResult)
   func onSessionTokenNeeded(uid: Swift.String)
@@ -49,26 +80,53 @@ public protocol AlogameKycListener : AnyObject {
 extension AlogameKycKit.AlogameKycListener {
   public func onSessionTokenNeeded(uid: Swift.String)
 }
+@objc public protocol AlogameKycObjcListener {
+  @objc(onResultWithStatus:reason:message:) func onResult(status: AlogameKycKit.AlogameKycResultStatus, reason: AlogameKycKit.AlogameKycFailReasonCode, message: Swift.String?)
+  @objc(onSessionTokenNeededForUid:) optional func onSessionTokenNeeded(uid: Swift.String)
+}
 public enum AlogameKycResult {
   case success
   case failed(reason: AlogameKycKit.AlogameKycFailReason, message: Swift.String?)
   case cancelled
 }
-@_hasMissingDesignatedInitializers final public class AlogameKycSdk {
-  public static let shared: AlogameKycKit.AlogameKycSdk
-  final public func initialize(_ config: AlogameKycKit.AlogameKycConfig)
-  final public func setGameRole(uid: Swift.String, sessionToken: Swift.String, serverId: Swift.String? = nil, roleId: Swift.String? = nil)
-  final public func setPrefill(_ fullName: Swift.String?)
-  final public var isVerified: Swift.Bool {
+@objc public enum AlogameKycResultStatus : Swift.Int {
+  case success
+  case failed
+  case cancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
-  final public func provideSessionToken(_ token: Swift.String)
-  final public func abortPendingToken()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AlogameKycSdk : ObjectiveC.NSObject {
+  @objc public static let shared: AlogameKycKit.AlogameKycSdk
+  final public func initialize(_ config: AlogameKycKit.AlogameKycConfig)
+  @objc(initializeWithEnv:tokenProvider:) final public func initialize(env: AlogameKycKit.AlogameKycEnv, tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)? = nil)
+  @objc(initializeWithEnv:tokenProvider:brand:) final public func initialize(env: AlogameKycKit.AlogameKycEnv, tokenProvider: ((Swift.String, @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)? = nil, brand: AlogameKycKit.AlogameKycBrand)
+  @objc(setGameRoleWithUid:sessionToken:serverId:roleId:) final public func setGameRole(uid: Swift.String, sessionToken: Swift.String, serverId: Swift.String? = nil, roleId: Swift.String? = nil)
+  @objc(setPrefill:) final public func setPrefill(_ fullName: Swift.String?)
+  @objc final public var isVerified: Swift.Bool {
+    @objc get
+  }
+  @objc(provideSessionToken:) final public func provideSessionToken(_ token: Swift.String)
+  @objc final public func abortPendingToken()
   final public func show(from viewController: UIKit.UIViewController, listener: any AlogameKycKit.AlogameKycListener)
+  @objc(showFromViewController:objcListener:) final public func show(from viewController: UIKit.UIViewController, objcListener: any AlogameKycKit.AlogameKycObjcListener)
   @objc deinit
 }
 extension AlogameKycKit.AlogameKycEnv : Swift.Equatable {}
 extension AlogameKycKit.AlogameKycEnv : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycEnv : Swift.RawRepresentable {}
+extension AlogameKycKit.AlogameKycBrand : Swift.Equatable {}
+extension AlogameKycKit.AlogameKycBrand : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycBrand : Swift.RawRepresentable {}
 extension AlogameKycKit.AlogameKycFailReason : Swift.Equatable {}
 extension AlogameKycKit.AlogameKycFailReason : Swift.Hashable {}
 extension AlogameKycKit.AlogameKycFailReason : Swift.RawRepresentable {}
+extension AlogameKycKit.AlogameKycFailReasonCode : Swift.Equatable {}
+extension AlogameKycKit.AlogameKycFailReasonCode : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycFailReasonCode : Swift.RawRepresentable {}
+extension AlogameKycKit.AlogameKycResultStatus : Swift.Equatable {}
+extension AlogameKycKit.AlogameKycResultStatus : Swift.Hashable {}
+extension AlogameKycKit.AlogameKycResultStatus : Swift.RawRepresentable {}

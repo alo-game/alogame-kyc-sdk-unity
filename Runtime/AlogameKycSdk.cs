@@ -19,15 +19,19 @@ namespace Alogame.KycSdk
     {
         private const string Tag = "[AlogameKycSdk]";
 
-        /// <summary>Call once before SetGameRole or Show. Idempotent — a later call replaces the earlier config.</summary>
-        public static void Init(AlogameKycEnv env)
+        /// <summary>
+        /// Call once before SetGameRole or Show. Idempotent — a later call
+        /// replaces the earlier config. brand is cosmetic only (which logo
+        /// the header shows) — defaults to Alo so existing callers are unaffected.
+        /// </summary>
+        public static void Init(AlogameKycEnv env, AlogameKycBrand brand = AlogameKycBrand.Alo)
         {
 #if UNITY_ANDROID && !UNITY_EDITOR
-            AlogameKycAndroidBridge.Init(env);
+            AlogameKycAndroidBridge.Init(env, brand);
 #elif UNITY_IOS && !UNITY_EDITOR
-            AlogameKycIosBridge.Init(env);
+            AlogameKycIosBridge.Init(env, brand);
 #else
-            LogUnsupported("Init(" + env + ")");
+            LogUnsupported("Init(" + env + ", " + brand + ")");
 #endif
         }
 

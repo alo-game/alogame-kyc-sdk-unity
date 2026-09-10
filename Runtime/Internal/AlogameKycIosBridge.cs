@@ -17,7 +17,7 @@ namespace Alogame.KycSdk.Internal
         private delegate void NativeCallback(string json);
 
         [DllImport("__Internal")] private static extern void _AlogameKyc_RegisterCallback(NativeCallback callback);
-        [DllImport("__Internal")] private static extern void _AlogameKyc_Init(int env);
+        [DllImport("__Internal")] private static extern void _AlogameKyc_Init(int env, int brand);
         [DllImport("__Internal")] private static extern void _AlogameKyc_SetGameRole(string uid, string sessionToken, string serverId, string roleId);
         [DllImport("__Internal")] private static extern void _AlogameKyc_SetPrefill(string fullName);
         [DllImport("__Internal")] private static extern int _AlogameKyc_IsVerified();
@@ -42,10 +42,10 @@ namespace Alogame.KycSdk.Internal
             _AlogameKyc_RegisterCallback(_callback);
         }
 
-        internal static void Init(AlogameKycEnv env)
+        internal static void Init(AlogameKycEnv env, AlogameKycBrand brand)
         {
             EnsureRegistered();
-            _AlogameKyc_Init(env == AlogameKycEnv.Prod ? 1 : 0);
+            _AlogameKyc_Init(env == AlogameKycEnv.Prod ? 1 : 0, brand == AlogameKycBrand.Oeg ? 1 : 0);
         }
 
         internal static void SetGameRole(string uid, string sessionToken, string serverId, string roleId)

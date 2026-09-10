@@ -50,9 +50,9 @@ namespace Alogame.KycSdk.Internal
             }
         }
 
-        internal static void Init(AlogameKycEnv env)
+        internal static void Init(AlogameKycEnv env, AlogameKycBrand brand)
         {
-            Bridge.CallStatic("init", Activity, env == AlogameKycEnv.Prod ? "prod" : "dev");
+            Bridge.CallStatic("init", Activity, env == AlogameKycEnv.Prod ? "prod" : "dev", brand == AlogameKycBrand.Oeg ? "oeg" : "alo");
         }
 
         internal static void SetGameRole(string uid, string sessionToken, string serverId, string roleId)

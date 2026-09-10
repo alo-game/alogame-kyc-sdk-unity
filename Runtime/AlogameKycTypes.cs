@@ -12,6 +12,18 @@ namespace Alogame.KycSdk
     }
 
     /// <summary>
+    /// Which logo the native screen's header shows — purely cosmetic, no
+    /// effect on env/endpoint selection (those stay governed by
+    /// <see cref="AlogameKycEnv"/> alone). Defaults to <see cref="Alo"/> so
+    /// every existing integration is unaffected.
+    /// </summary>
+    public enum AlogameKycBrand
+    {
+        Alo,
+        Oeg,
+    }
+
+    /// <summary>
     /// Exactly these 9 values, closed on purpose — identical set to
     /// <c>AlogameKycFailReason</c> on Kotlin and Swift. Adding a tenth on any
     /// one platform without the others is a parity bug.

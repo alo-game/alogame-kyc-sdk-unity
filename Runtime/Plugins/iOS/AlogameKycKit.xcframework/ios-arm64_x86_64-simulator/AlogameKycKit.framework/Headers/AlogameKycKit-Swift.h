@@ -346,6 +346,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif // defined(__OBJC__)
@@ -367,6 +368,161 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+/// Which logo the screen’s header shows — purely cosmetic, no effect on any
+/// network call or endpoint (those are still selected by <code>AlogameKycEnv</code>
+/// alone). Added for OEG-branded games adopting this SDK; defaults to <code>.alo</code>
+/// so every existing integration is unaffected. <code>@objc</code>-backed for the same
+/// reason as <code>AlogameKycEnv</code> above.
+typedef SWIFT_ENUM(NSInteger, AlogameKycBrand, open) {
+  AlogameKycBrandAlo = 0,
+  AlogameKycBrandOeg = 1,
+};
+
+/// <code>.dev</code> | <code>.prod</code> — selects between the two compile-time base URLs. There
+/// is no way for a Host_App to supply a URL directly (R5.3/R5.3a). See
+/// <code>Internal/Net/Environment.swift</code> for the actual constants.
+/// <code>@objc</code>-backed by <code>Int</code> (not the raw-value-less enum this started as) so
+/// it can appear in the Objective-C-facing overloads on <code>AlogameKycSdk</code> —
+/// same pattern v2’s <code>OEGActionType</code>/<code>OEGIAPStatus</code> use
+/// (<code>Core/Public/OEGEnums.swift</code>). Purely additive: no existing Swift call
+/// site reads <code>.rawValue</code>, so <code>.dev</code>/<code>.prod</code>/exhaustive switches are
+/// unaffected.
+typedef SWIFT_ENUM(NSInteger, AlogameKycEnv, open) {
+  AlogameKycEnvDev = 0,
+  AlogameKycEnvProd = 1,
+};
+
+/// The Objective-C-facing mirror of <code>AlogameKycFailReason</code> — <code>@objc enum</code>
+/// only accepts an <code>Int</code> raw type, so the existing <code>String</code>-backed enum
+/// above (its raw values are load-bearing — R7.1 Android-identifier parity,
+/// asserted by <code>PublicSurfaceTests.test_alogameKycFailReason_...</code>) stays
+/// exactly as it is rather than being retyped. <code>AlogameKycObjcListener</code>
+/// (the <code>@objc</code>-facing listener protocol) carries this instead of the
+/// String-backed original. Case order/count is asserted alongside the
+/// Swift enum’s own parity test — a 10th reason added to one without the
+/// other fails there, not here.
+typedef SWIFT_ENUM(NSInteger, AlogameKycFailReasonCode, open) {
+  AlogameKycFailReasonCodeNotInitialized = 0,
+  AlogameKycFailReasonCodeNoGameRole = 1,
+  AlogameKycFailReasonCodeSessionUnavailable = 2,
+  AlogameKycFailReasonCodeSessionInvalid = 3,
+  AlogameKycFailReasonCodeOtpAttemptsExceeded = 4,
+  AlogameKycFailReasonCodeOtpUnavailable = 5,
+  AlogameKycFailReasonCodeRateLimited = 6,
+  AlogameKycFailReasonCodeServiceUnavailable = 7,
+  AlogameKycFailReasonCodeUnknownError = 8,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, AlogameKycResultStatus)
+@class NSString;
+/// The Objective-C-facing counterpart to <code>AlogameKycListener</code> — same
+/// pattern as v2’s <code>OEGCallback</code>/<code>OEGPushDelegate</code>
+/// (<code>Core/Bridge/OEGCallback.swift</code>, <code>Core/Push/OEGPush.swift</code>): an
+/// <code>@objc protocol</code> with <code>@objc optional</code> for the one method that isn’t
+/// mandatory, since a Swift protocol-extension default implementation
+/// (what <code>AlogameKycListener.onSessionTokenNeeded</code> uses) has no Objective-C
+/// equivalent and is never visible across the bridge.
+/// <code>AlogameKycResult</code>’s enum-with-payload cannot cross into an <code>@objc</code>
+/// protocol at all — <code>onResult</code> here carries <code>AlogameKycResultStatus</code> plus
+/// separate <code>reason</code>/<code>message</code> parameters instead (<code>reason</code> is only
+/// meaningful when <code>status == .failed</code>, same discipline
+/// <code>AlogameKycResult.failed</code> itself already has).
+SWIFT_PROTOCOL("_TtP13AlogameKycKit22AlogameKycObjcListener_")
+@protocol AlogameKycObjcListener
+/// Fires exactly once per <code>show</code> call, on the main queue — same timing
+/// guarantee as <code>AlogameKycListener.onResult</code> (R3.2).
+- (void)onResultWithStatus:(enum AlogameKycResultStatus)status reason:(enum AlogameKycFailReasonCode)reason message:(NSString * _Nullable)message;
+@optional
+/// Only invoked when <code>AlogameKycConfig.tokenProvider</code> was <code>nil</code> at
+/// <code>initialize</code>. Optional here the Objective-C way (<code>@objc optional</code>,
+/// checked via <code>responds(to:)</code>/optional chaining) rather than a Swift
+/// protocol-extension default, since defaults do not bridge.
+- (void)onSessionTokenNeededForUid:(NSString * _Nonnull)uid;
+@end
+
+/// The Objective-C-facing discriminant for <code>AlogameKycResult</code> — <code>@objc</code>
+/// cannot apply to an enum with associated values at all (no Objective-C
+/// equivalent exists for <code>.failed(reason:, message:)</code>), so this package’s
+/// only public enum-with-payload stays exactly as it is for Swift callers.
+/// <code>AlogameKycObjcListener.onResult</code> carries this plus separate <code>reason</code>/
+/// <code>message</code> parameters instead — same flattening v2 uses for
+/// <code>OEGIAPStatus</code>/<code>OEGAccountCallback</code> (<code>Core/Public/OEGEnums.swift</code>) rather
+/// than a wrapper class with optional fields.
+typedef SWIFT_ENUM(NSInteger, AlogameKycResultStatus, open) {
+  AlogameKycResultStatusSuccess = 0,
+  AlogameKycResultStatusFailed = 1,
+  AlogameKycResultStatusCancelled = 2,
+};
+
+@class UIViewController;
+/// The entire public API (design.md § Public API — exactly this surface,
+/// R2.1). Everything else in this module is <code>internal</code>.
+/// <code>show</code> runs prerequisite checks and the <code>xmdtCompleted</code> short-circuit
+/// synchronously against <code>FlowController</code>, and only presents
+/// <code>KycViewController</code> once the flow actually needs a screen — never for the
+/// transient <code>.resolving</code> tick, so a session that resolves straight to
+/// <code>xmdtCompleted</code> opens no screen at all (R2.4 of the iOS spec). <code>onResult</code>
+/// is deferred until <code>KycViewController</code> has actually been dismissed
+/// (<code>notifyViewControllerDismissed</code>, called from its <code>dismiss(animated:)</code>
+/// completion) whenever a screen was shown at all — see <code>onFlowStateChanged</code>.
+/// <code>@objc</code> + <code>NSObject</code> added directly onto this same class — same
+/// mechanism v2 uses for <code>OEGManager</code>/<code>OegSdkCore</code>
+/// (<code>Core/Public/OEGManager.swift</code>, <code>Core/Public/OegSdkCore.swift</code>): no
+/// separate ObjC-facing facade class, <code>@objc</code> annotations live right on
+/// the existing public members. Every member already ObjC-representable
+/// (<code>String</code>/<code>String?</code>/<code>Bool</code>/closures of those) just gets <code>@objc</code>
+/// directly; the two members that were not representable at all
+/// (<code>initialize(_:)</code> takes a struct, <code>show(from:listener:)</code> takes a
+/// protocol carrying an enum-with-payload) get a parallel <code>@objc</code> overload
+/// instead of having their existing Swift signature changed — this
+/// package’s public API is documented as frozen (design.md § Public API,
+/// guarded by <code>PublicSurfaceTests.swift</code>), unlike v2 which had no prior
+/// Swift-only surface to preserve.
+SWIFT_CLASS("_TtC13AlogameKycKit13AlogameKycSdk")
+@interface AlogameKycSdk : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AlogameKycSdk * _Nonnull shared;)
++ (AlogameKycSdk * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Objective-C-facing overload — <code>AlogameKycConfig</code> is a <code>struct</code>
+/// (can’t cross the bridge at all), so this takes the same two fields
+/// as plain, ObjC-representable parameters instead and builds the
+/// config internally. Behaves identically to <code>initialize(_:)</code>.
+/// Kept as its own selector (rather than adding <code>brand:</code> to it) so no
+/// existing Objective-C call site breaks — a new selector below covers
+/// callers that do want to pick a brand.
+- (void)initializeWithEnv:(enum AlogameKycEnv)env tokenProvider:(void (^ _Nullable)(NSString * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))tokenProvider;
+/// Same as above, for Objective-C callers that want a non-default <code>brand</code>.
+- (void)initializeWithEnv:(enum AlogameKycEnv)env tokenProvider:(void (^ _Nullable)(NSString * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))tokenProvider brand:(enum AlogameKycBrand)brand;
+/// <code>uid</code> and <code>sessionToken</code> are required together — they always arrive
+/// from the same game-server response. Switching to a different <code>uid</code>
+/// clears the verified cache and the prefill name for the old one — see
+/// <code>SessionHolder.setGameRole</code>.
+- (void)setGameRoleWithUid:(NSString * _Nonnull)uid sessionToken:(NSString * _Nonnull)sessionToken serverId:(NSString * _Nullable)serverId roleId:(NSString * _Nullable)roleId;
+/// In-memory only — never written to disk, never sent anywhere except to
+/// <code>ekycx</code> at the collect step, and only after the player has seen and
+/// could edit it. Cleared when <code>uid</code> changes.
+/// <code>ASAuthorizationAppleIDCredential.fullName</code> arrives only on the
+/// <em>first</em> authorize for a given Apple ID — capture it there or it is
+/// gone until the user revokes the app in Settings.
+- (void)setPrefill:(NSString * _Nullable)fullName;
+/// RAM cache of the most recent successful flow for the current uid —
+/// <em>not</em> an authorization source. The game server must call
+/// <code>POST /xmdt/user-status</code> before trusting that a player has verified;
+/// a modified client can make this return whatever it wants.
+@property (nonatomic, readonly) BOOL isVerified;
+/// Delegates to the pending token request, if any. Ignored (not thrown) when nothing is awaiting a token.
+- (void)provideSessionToken:(NSString * _Nonnull)token;
+/// Delegates to the pending token request, if any — resolves it as <code>.sessionUnavailable</code>.
+- (void)abortPendingToken;
+/// Objective-C-facing overload — <code>AlogameKycListener</code> can’t cross the
+/// bridge itself (<code>onResult</code> carries <code>AlogameKycResult</code>, an enum with
+/// associated values), so this wraps <code>objcListener</code> in
+/// <code>ObjcListenerAdapter</code> and calls the exact same <code>show(from:listener:)</code>
+/// above. No behavior lives here beyond that translation.
+- (void)showFromViewController:(UIViewController * _Nonnull)viewController objcListener:(id <AlogameKycObjcListener> _Nonnull)objcListener;
+@end
 
 #endif // defined(__OBJC__)
 #if __has_attribute(external_source_symbol)
@@ -724,6 +880,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif // defined(__OBJC__)
@@ -745,6 +902,161 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+/// Which logo the screen’s header shows — purely cosmetic, no effect on any
+/// network call or endpoint (those are still selected by <code>AlogameKycEnv</code>
+/// alone). Added for OEG-branded games adopting this SDK; defaults to <code>.alo</code>
+/// so every existing integration is unaffected. <code>@objc</code>-backed for the same
+/// reason as <code>AlogameKycEnv</code> above.
+typedef SWIFT_ENUM(NSInteger, AlogameKycBrand, open) {
+  AlogameKycBrandAlo = 0,
+  AlogameKycBrandOeg = 1,
+};
+
+/// <code>.dev</code> | <code>.prod</code> — selects between the two compile-time base URLs. There
+/// is no way for a Host_App to supply a URL directly (R5.3/R5.3a). See
+/// <code>Internal/Net/Environment.swift</code> for the actual constants.
+/// <code>@objc</code>-backed by <code>Int</code> (not the raw-value-less enum this started as) so
+/// it can appear in the Objective-C-facing overloads on <code>AlogameKycSdk</code> —
+/// same pattern v2’s <code>OEGActionType</code>/<code>OEGIAPStatus</code> use
+/// (<code>Core/Public/OEGEnums.swift</code>). Purely additive: no existing Swift call
+/// site reads <code>.rawValue</code>, so <code>.dev</code>/<code>.prod</code>/exhaustive switches are
+/// unaffected.
+typedef SWIFT_ENUM(NSInteger, AlogameKycEnv, open) {
+  AlogameKycEnvDev = 0,
+  AlogameKycEnvProd = 1,
+};
+
+/// The Objective-C-facing mirror of <code>AlogameKycFailReason</code> — <code>@objc enum</code>
+/// only accepts an <code>Int</code> raw type, so the existing <code>String</code>-backed enum
+/// above (its raw values are load-bearing — R7.1 Android-identifier parity,
+/// asserted by <code>PublicSurfaceTests.test_alogameKycFailReason_...</code>) stays
+/// exactly as it is rather than being retyped. <code>AlogameKycObjcListener</code>
+/// (the <code>@objc</code>-facing listener protocol) carries this instead of the
+/// String-backed original. Case order/count is asserted alongside the
+/// Swift enum’s own parity test — a 10th reason added to one without the
+/// other fails there, not here.
+typedef SWIFT_ENUM(NSInteger, AlogameKycFailReasonCode, open) {
+  AlogameKycFailReasonCodeNotInitialized = 0,
+  AlogameKycFailReasonCodeNoGameRole = 1,
+  AlogameKycFailReasonCodeSessionUnavailable = 2,
+  AlogameKycFailReasonCodeSessionInvalid = 3,
+  AlogameKycFailReasonCodeOtpAttemptsExceeded = 4,
+  AlogameKycFailReasonCodeOtpUnavailable = 5,
+  AlogameKycFailReasonCodeRateLimited = 6,
+  AlogameKycFailReasonCodeServiceUnavailable = 7,
+  AlogameKycFailReasonCodeUnknownError = 8,
+};
+
+SWIFT_ENUM_FWD_DECL(NSInteger, AlogameKycResultStatus)
+@class NSString;
+/// The Objective-C-facing counterpart to <code>AlogameKycListener</code> — same
+/// pattern as v2’s <code>OEGCallback</code>/<code>OEGPushDelegate</code>
+/// (<code>Core/Bridge/OEGCallback.swift</code>, <code>Core/Push/OEGPush.swift</code>): an
+/// <code>@objc protocol</code> with <code>@objc optional</code> for the one method that isn’t
+/// mandatory, since a Swift protocol-extension default implementation
+/// (what <code>AlogameKycListener.onSessionTokenNeeded</code> uses) has no Objective-C
+/// equivalent and is never visible across the bridge.
+/// <code>AlogameKycResult</code>’s enum-with-payload cannot cross into an <code>@objc</code>
+/// protocol at all — <code>onResult</code> here carries <code>AlogameKycResultStatus</code> plus
+/// separate <code>reason</code>/<code>message</code> parameters instead (<code>reason</code> is only
+/// meaningful when <code>status == .failed</code>, same discipline
+/// <code>AlogameKycResult.failed</code> itself already has).
+SWIFT_PROTOCOL("_TtP13AlogameKycKit22AlogameKycObjcListener_")
+@protocol AlogameKycObjcListener
+/// Fires exactly once per <code>show</code> call, on the main queue — same timing
+/// guarantee as <code>AlogameKycListener.onResult</code> (R3.2).
+- (void)onResultWithStatus:(enum AlogameKycResultStatus)status reason:(enum AlogameKycFailReasonCode)reason message:(NSString * _Nullable)message;
+@optional
+/// Only invoked when <code>AlogameKycConfig.tokenProvider</code> was <code>nil</code> at
+/// <code>initialize</code>. Optional here the Objective-C way (<code>@objc optional</code>,
+/// checked via <code>responds(to:)</code>/optional chaining) rather than a Swift
+/// protocol-extension default, since defaults do not bridge.
+- (void)onSessionTokenNeededForUid:(NSString * _Nonnull)uid;
+@end
+
+/// The Objective-C-facing discriminant for <code>AlogameKycResult</code> — <code>@objc</code>
+/// cannot apply to an enum with associated values at all (no Objective-C
+/// equivalent exists for <code>.failed(reason:, message:)</code>), so this package’s
+/// only public enum-with-payload stays exactly as it is for Swift callers.
+/// <code>AlogameKycObjcListener.onResult</code> carries this plus separate <code>reason</code>/
+/// <code>message</code> parameters instead — same flattening v2 uses for
+/// <code>OEGIAPStatus</code>/<code>OEGAccountCallback</code> (<code>Core/Public/OEGEnums.swift</code>) rather
+/// than a wrapper class with optional fields.
+typedef SWIFT_ENUM(NSInteger, AlogameKycResultStatus, open) {
+  AlogameKycResultStatusSuccess = 0,
+  AlogameKycResultStatusFailed = 1,
+  AlogameKycResultStatusCancelled = 2,
+};
+
+@class UIViewController;
+/// The entire public API (design.md § Public API — exactly this surface,
+/// R2.1). Everything else in this module is <code>internal</code>.
+/// <code>show</code> runs prerequisite checks and the <code>xmdtCompleted</code> short-circuit
+/// synchronously against <code>FlowController</code>, and only presents
+/// <code>KycViewController</code> once the flow actually needs a screen — never for the
+/// transient <code>.resolving</code> tick, so a session that resolves straight to
+/// <code>xmdtCompleted</code> opens no screen at all (R2.4 of the iOS spec). <code>onResult</code>
+/// is deferred until <code>KycViewController</code> has actually been dismissed
+/// (<code>notifyViewControllerDismissed</code>, called from its <code>dismiss(animated:)</code>
+/// completion) whenever a screen was shown at all — see <code>onFlowStateChanged</code>.
+/// <code>@objc</code> + <code>NSObject</code> added directly onto this same class — same
+/// mechanism v2 uses for <code>OEGManager</code>/<code>OegSdkCore</code>
+/// (<code>Core/Public/OEGManager.swift</code>, <code>Core/Public/OegSdkCore.swift</code>): no
+/// separate ObjC-facing facade class, <code>@objc</code> annotations live right on
+/// the existing public members. Every member already ObjC-representable
+/// (<code>String</code>/<code>String?</code>/<code>Bool</code>/closures of those) just gets <code>@objc</code>
+/// directly; the two members that were not representable at all
+/// (<code>initialize(_:)</code> takes a struct, <code>show(from:listener:)</code> takes a
+/// protocol carrying an enum-with-payload) get a parallel <code>@objc</code> overload
+/// instead of having their existing Swift signature changed — this
+/// package’s public API is documented as frozen (design.md § Public API,
+/// guarded by <code>PublicSurfaceTests.swift</code>), unlike v2 which had no prior
+/// Swift-only surface to preserve.
+SWIFT_CLASS("_TtC13AlogameKycKit13AlogameKycSdk")
+@interface AlogameKycSdk : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AlogameKycSdk * _Nonnull shared;)
++ (AlogameKycSdk * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Objective-C-facing overload — <code>AlogameKycConfig</code> is a <code>struct</code>
+/// (can’t cross the bridge at all), so this takes the same two fields
+/// as plain, ObjC-representable parameters instead and builds the
+/// config internally. Behaves identically to <code>initialize(_:)</code>.
+/// Kept as its own selector (rather than adding <code>brand:</code> to it) so no
+/// existing Objective-C call site breaks — a new selector below covers
+/// callers that do want to pick a brand.
+- (void)initializeWithEnv:(enum AlogameKycEnv)env tokenProvider:(void (^ _Nullable)(NSString * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))tokenProvider;
+/// Same as above, for Objective-C callers that want a non-default <code>brand</code>.
+- (void)initializeWithEnv:(enum AlogameKycEnv)env tokenProvider:(void (^ _Nullable)(NSString * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))tokenProvider brand:(enum AlogameKycBrand)brand;
+/// <code>uid</code> and <code>sessionToken</code> are required together — they always arrive
+/// from the same game-server response. Switching to a different <code>uid</code>
+/// clears the verified cache and the prefill name for the old one — see
+/// <code>SessionHolder.setGameRole</code>.
+- (void)setGameRoleWithUid:(NSString * _Nonnull)uid sessionToken:(NSString * _Nonnull)sessionToken serverId:(NSString * _Nullable)serverId roleId:(NSString * _Nullable)roleId;
+/// In-memory only — never written to disk, never sent anywhere except to
+/// <code>ekycx</code> at the collect step, and only after the player has seen and
+/// could edit it. Cleared when <code>uid</code> changes.
+/// <code>ASAuthorizationAppleIDCredential.fullName</code> arrives only on the
+/// <em>first</em> authorize for a given Apple ID — capture it there or it is
+/// gone until the user revokes the app in Settings.
+- (void)setPrefill:(NSString * _Nullable)fullName;
+/// RAM cache of the most recent successful flow for the current uid —
+/// <em>not</em> an authorization source. The game server must call
+/// <code>POST /xmdt/user-status</code> before trusting that a player has verified;
+/// a modified client can make this return whatever it wants.
+@property (nonatomic, readonly) BOOL isVerified;
+/// Delegates to the pending token request, if any. Ignored (not thrown) when nothing is awaiting a token.
+- (void)provideSessionToken:(NSString * _Nonnull)token;
+/// Delegates to the pending token request, if any — resolves it as <code>.sessionUnavailable</code>.
+- (void)abortPendingToken;
+/// Objective-C-facing overload — <code>AlogameKycListener</code> can’t cross the
+/// bridge itself (<code>onResult</code> carries <code>AlogameKycResult</code>, an enum with
+/// associated values), so this wraps <code>objcListener</code> in
+/// <code>ObjcListenerAdapter</code> and calls the exact same <code>show(from:listener:)</code>
+/// above. No behavior lives here beyond that translation.
+- (void)showFromViewController:(UIViewController * _Nonnull)viewController objcListener:(id <AlogameKycObjcListener> _Nonnull)objcListener;
+@end
 
 #endif // defined(__OBJC__)
 #if __has_attribute(external_source_symbol)

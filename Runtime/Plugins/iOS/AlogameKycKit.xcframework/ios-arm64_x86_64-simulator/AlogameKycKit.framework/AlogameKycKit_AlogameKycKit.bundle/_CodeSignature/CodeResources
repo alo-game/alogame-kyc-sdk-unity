@@ -8,6 +8,10 @@
 		<data>
 		Bd7get1st4siRVlI0rTe+JclYgU=
 		</data>
+		<key>logo-oeg-white.png</key>
+		<data>
+		h8QwXu+61m+t5OQQhvnSVj2dulE=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -16,6 +20,13 @@
 			<key>hash2</key>
 			<data>
 			2/Ow5OJfsGvgIcdnXlGEE+6NapTdlLlxzr+xkkEBGJI=
+			</data>
+		</dict>
+		<key>logo-oeg-white.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lWBsIoHvA5XOEfR3L7Q8EqEFbPyF2J1S5w3NowW0RWk=
 			</data>
 		</dict>
 	</dict>

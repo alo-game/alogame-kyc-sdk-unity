@@ -22,10 +22,10 @@ green console proves nothing.
 Package Manager → **+** → **Add package from git URL**:
 
 ```
-https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.3
+https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.4
 ```
 
-Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.3`). While iterating locally,
+Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.4`). While iterating locally,
 **Add package from disk** pointed at this `unity/` folder works too and makes the
 package mutable.
 

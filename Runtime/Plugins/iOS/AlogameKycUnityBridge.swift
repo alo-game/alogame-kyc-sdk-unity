@@ -125,13 +125,16 @@ public func _AlogameKyc_RegisterCallback(_ callback: @escaping AlogameKycUnityCa
 }
 
 /// `env` is 1 for prod, anything else for dev — fail-safe toward dev so a
-/// marshalling mistake never points a test build at production.
+/// marshalling mistake never points a test build at production. `brand` is 1
+/// for oeg, anything else for alo — cosmetic only, no effect on env/endpoint
+/// selection.
 @_cdecl("_AlogameKyc_Init")
-public func _AlogameKyc_Init(_ env: Int32) {
-    let resolved: AlogameKycEnv = (env == 1) ? .prod : .dev
+public func _AlogameKyc_Init(_ env: Int32, _ brand: Int32) {
+    let resolvedEnv: AlogameKycEnv = (env == 1) ? .prod : .dev
+    let resolvedBrand: AlogameKycBrand = (brand == 1) ? .oeg : .alo
     // tokenProvider always nil — a C# delegate cannot cross as a live Swift
     // closure. Refresh goes through onSessionTokenNeeded instead.
-    AlogameKycSdk.shared.initialize(AlogameKycConfig(env: resolved, tokenProvider: nil))
+    AlogameKycSdk.shared.initialize(AlogameKycConfig(env: resolvedEnv, tokenProvider: nil, brand: resolvedBrand))
 }
 
 @_cdecl("_AlogameKyc_SetGameRole")
