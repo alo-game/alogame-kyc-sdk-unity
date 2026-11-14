@@ -23,7 +23,7 @@ package vn.alogame.kycsdk.unity;
  */
 public interface AlogameKycFlatListener {
     /**
-     * @param status  "success" | "failed" | "cancelled"
+     * @param status  "success" | "failed" | "cancelled" | "exitRequested"
      * @param reason  one of the 9 AlogameKycFailReason identifiers, or null unless status is "failed"
      * @param message optional detail, always null unless status is "failed"
      */

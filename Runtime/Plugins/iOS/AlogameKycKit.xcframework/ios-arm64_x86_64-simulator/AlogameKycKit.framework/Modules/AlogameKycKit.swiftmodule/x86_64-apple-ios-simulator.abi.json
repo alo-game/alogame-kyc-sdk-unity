@@ -2310,7 +2310,50 @@
             "declKind": "EnumElement",
             "usr": "s:13AlogameKycKit0aB6ResultO9cancelledyA2CmF",
             "mangledName": "$s13AlogameKycKit0aB6ResultO9cancelledyA2CmF",
-            "moduleName": "AlogameKycKit"
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitRequested",
+            "printedName": "exitRequested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycResult.Type) -> AlogameKycKit.AlogameKycResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycResult",
+                    "printedName": "AlogameKycKit.AlogameKycResult",
+                    "usr": "s:13AlogameKycKit0aB6ResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResult",
+                        "printedName": "AlogameKycKit.AlogameKycResult",
+                        "usr": "s:13AlogameKycKit0aB6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13AlogameKycKit0aB6ResultO13exitRequestedyA2CmF",
+            "mangledName": "$s13AlogameKycKit0aB6ResultO13exitRequestedyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",
@@ -2465,6 +2508,47 @@
               "ObjC"
             ],
             "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "exitRequested",
+            "printedName": "exitRequested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AlogameKycKit.AlogameKycResultStatus.Type) -> AlogameKycKit.AlogameKycResultStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AlogameKycResultStatus",
+                    "printedName": "AlogameKycKit.AlogameKycResultStatus",
+                    "usr": "c:@M@AlogameKycKit@E@AlogameKycResultStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AlogameKycKit.AlogameKycResultStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AlogameKycResultStatus",
+                        "printedName": "AlogameKycKit.AlogameKycResultStatus",
+                        "usr": "c:@M@AlogameKycKit@E@AlogameKycResultStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AlogameKycKit@E@AlogameKycResultStatus@AlogameKycResultStatusExitRequested",
+            "mangledName": "$s13AlogameKycKit0aB12ResultStatusO13exitRequestedyA2CmF",
+            "moduleName": "AlogameKycKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Constructor",
@@ -3397,795 +3481,823 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 29,
       "value": "\"AlogameKycKit_AlogameKycKit\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 983,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1510,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphonesimulator\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1662,
       "length": 57,
       "value": "\"unable to find bundle named AlogameKycKit_AlogameKycKit\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 671,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 1087,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2068,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2088,
       "length": 18,
       "value": "2"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2116,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2140,
       "length": 19,
       "value": "4"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2169,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2193,
       "length": 11,
       "value": "6"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2214,
       "length": 18,
       "value": "7"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2242,
       "length": 12,
       "value": "8"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 979,
+      "offset": 1349,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 1365,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1384,
+      "length": 13,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 2055,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "kind": "FloatLiteral",
+      "offset": 2373,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2482,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
       "kind": "IntegerLiteral",
       "offset": 1766,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
       "kind": "BooleanLiteral",
       "offset": 1795,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 827,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 859,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 960,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2261,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2309,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 2369,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Dictionary",
       "offset": 2543,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Array",
       "offset": 2765,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 2792,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2980,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Array",
       "offset": 3019,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 3571,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Security\/CaptureGuard.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4256,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Security\/CaptureGuard.swift",
       "kind": "Array",
       "offset": 1210,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
       "kind": "IntegerLiteral",
       "offset": 1226,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/ConsentView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/ConsentView.swift",
       "kind": "Dictionary",
       "offset": 936,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 1878,
       "length": 8,
       "value": "\"0B0B0E\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2011,
       "length": 8,
       "value": "\"17171D\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2137,
       "length": 8,
       "value": "\"0F0F14\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2255,
       "length": 8,
       "value": "\"2A2A33\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2385,
       "length": 8,
       "value": "\"22222B\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2511,
       "length": 8,
       "value": "\"121217\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2627,
       "length": 8,
       "value": "\"3A3A45\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2729,
       "length": 8,
       "value": "\"5B5F70\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2828,
       "length": 8,
       "value": "\"1D64F2\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2947,
       "length": 8,
       "value": "\"4C8CFF\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3047,
       "length": 8,
       "value": "\"E7E8ED\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3151,
       "length": 8,
       "value": "\"8B8FA0\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3280,
       "length": 8,
       "value": "\"C9CBD4\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3329,
       "length": 8,
       "value": "\"1D64F2\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3433,
       "length": 8,
       "value": "\"E5484D\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3561,
       "length": 8,
       "value": "\"28C76F\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3650,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3702,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3758,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3829,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3897,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4042,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4248,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4547,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4984,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5058,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5127,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 5203,
       "length": 3,
       "value": "9.5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5359,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5488,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5642,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5735,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5809,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 5883,
       "length": 4,
       "value": "12.5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5969,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 6045,
       "length": 4,
       "value": "12.5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 6124,
       "length": 4,
       "value": "14.5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6200,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6273,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6369,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6416,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6820,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6863,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6904,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6943,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6980,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7017,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7055,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7094,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7306,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7348,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7388,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7429,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7472,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7518,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7559,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7603,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7650,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7921,
       "length": 3,
       "value": "880"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 9736,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 9742,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 9781,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 9787,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "BooleanLiteral",
       "offset": 13336,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "IntegerLiteral",
       "offset": 4282,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "StringLiteral",
       "offset": 4472,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "StringLiteral",
       "offset": 4581,
       "length": 18,
       "value": "\"Asia\/Ho_Chi_Minh\""
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "Array",
       "offset": 22261,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2537,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "Array",
       "offset": 2605,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2685,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3846,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "Array",
       "offset": 1038,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "BooleanLiteral",
       "offset": 1283,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "IntegerLiteral",
       "offset": 1357,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/private\/tmp\/claude-501\/-Users-thohd-Dev-OEG-Workspace-Workspace\/a7f3285c-cd84-4cee-898b-e8956ccdf3cf\/scratchpad\/wt-kyc-unity\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
       "kind": "Dictionary",
       "offset": 778,
-      "length": 3663,
-      "value": "[(\"title\", \"Xác minh danh tính\"), (\"badge.required\", \"BẮT BUỘC\"), (\"reason.required\", \"Vui lòng hoàn thành xác minh danh tính trước khi vào game. Thông tin của bạn chỉ dùng để định danh tài khoản theo quy định.\"), (\"reason.required.compact\", \"Hoàn thành xác minh trước khi vào game. Chỉ mất khoảng 1 phút.\"), (\"reason.optional\", \"Xác minh danh tính theo quy định hiện hành.\"), (\"field.fullName.label\", \"HỌ VÀ TÊN\"), (\"field.fullName.hint\", \"Đúng như trên CCCD\/hộ chiếu\"), (\"field.fullName.placeholder\", \"Họ và tên theo CCCD *\"), (\"field.dob.label\", \"NGÀY SINH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Ngày sinh (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"SỐ ĐIỆN THOẠI\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Số điện thoại *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (không bắt buộc)\"), (\"action.sendCode\", \"Gửi mã\"), (\"action.sendCode.disabled\", \"Số điện thoại chưa hợp lệ.\"), (\"action.save\", \"Xác minh và vào game\"), (\"action.retry\", \"Thử lại\"), (\"action.exitGame\", \"Thoát game\"), (\"action.changePhone\", \"Đổi số\"), (\"action.pasteCode\", \"Dán mã\"), (\"action.done\", \"Xong\"), (\"action.resend\", \"Gửi lại mã\"), (\"action.resend.countdown\", \"Gửi lại mã ({seconds}s)\"), (\"otp.title\", \"Nhập mã xác minh\"), (\"otp.sentTo\", \"Mã đã gửi tới {phone}\"), (\"otp.incorrect\", \"Mã không đúng. Còn {n} lần thử.\"), (\"otp.expired\", \"Mã đã hết hạn. Vui lòng gửi lại.\"), (\"otp.exhausted\", \"Bạn đã gửi lại mã tối đa số lần cho phép.\"), (\"otp.support\", \"Không nhận được mã? Liên hệ hỗ trợ\"), (\"consent.parent\", \"Tôi đã đọc và đồng ý với các điều khoản\"), (\"error.consentRequired\", \"Cần đồng ý điều khoản để tiếp tục.\"), (\"error.underAge\", \"Dịch vụ dành cho người từ {minimumAge} tuổi trở lên, nên thông tin của bạn không được lưu.\"), (\"error.phoneTaken\", \"Số điện thoại này đã được liên kết với một tài khoản khác trong game.\"), (\"error.network\", \"Không có kết nối mạng.\"), (\"error.service\", \"Không kết nối được hệ thống xác minh.\"), (\"error.otpRateLimited\", \"Bạn đã yêu cầu mã quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpUnavailable\", \"Chưa gửi được mã xác minh lúc này. Vui lòng thử lại sau.\"), (\"confirm.exit.required\", \"Bạn cần hoàn tất xác minh để vào game. Thoát game?\"), (\"confirm.exit.optional\", \"Thông tin bạn đã nhập sẽ không được lưu. Đóng?\"), (\"success\", \"Xác minh thành công\")]"
+      "length": 4448,
+      "value": "[(\"title\", \"Xác minh danh tính\"), (\"badge.required\", \"BẮT BUỘC\"), (\"reason.required\", \"Vui lòng hoàn thành xác minh danh tính trước khi vào game. Thông tin của bạn chỉ dùng để định danh tài khoản theo quy định.\"), (\"reason.required.compact\", \"Hoàn thành xác minh trước khi vào game. Chỉ mất khoảng 1 phút.\"), (\"reason.optional\", \"Xác minh danh tính theo quy định hiện hành.\"), (\"field.fullName.label\", \"HỌ VÀ TÊN\"), (\"field.fullName.hint\", \"Đúng như trên CCCD\/hộ chiếu\"), (\"field.fullName.placeholder\", \"Họ và tên theo CCCD *\"), (\"field.dob.label\", \"NGÀY SINH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Ngày sinh (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"SỐ ĐIỆN THOẠI\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Số điện thoại *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (không bắt buộc)\"), (\"action.sendCode\", \"Gửi mã\"), (\"action.sendCode.disabled\", \"Số điện thoại chưa hợp lệ.\"), (\"action.save\", \"Xác minh và vào game\"), (\"action.retry\", \"Thử lại\"), (\"action.exitGame\", \"Thoát game\"), (\"action.changePhone\", \"Đổi số\"), (\"action.pasteCode\", \"Dán mã\"), (\"action.done\", \"Xong\"), (\"action.resend\", \"Gửi lại mã\"), (\"action.resend.countdown\", \"Gửi lại mã ({seconds}s)\"), (\"otp.title\", \"Nhập mã xác minh\"), (\"otp.sentTo\", \"Mã đã gửi tới {phone}\"), (\"otp.incorrect\", \"Mã không đúng. Còn {n} lần thử.\"), (\"otp.expired\", \"Mã đã hết hạn. Vui lòng gửi lại.\"), (\"otp.exhausted\", \"Bạn đã gửi lại mã tối đa số lần cho phép.\"), (\"otp.support\", \"Không nhận được mã? Liên hệ hỗ trợ\"), (\"consent.parent\", \"Tôi đã đọc và đồng ý với các điều khoản\"), (\"error.consentRequired\", \"Cần đồng ý điều khoản để tiếp tục.\"), (\"error.underAge\", \"Dịch vụ dành cho người từ {minimumAge} tuổi trở lên, nên thông tin của bạn không được lưu.\"), (\"error.phoneTaken\", \"Số điện thoại này đã được liên kết với một tài khoản khác trong game.\"), (\"error.network\", \"Không có kết nối mạng.\"), (\"error.service\", \"Không kết nối được hệ thống xác minh.\"), (\"error.otpRateLimited\", \"Bạn đã yêu cầu mã quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpUnavailable\", \"Chưa gửi được mã xác minh lúc này. Vui lòng thử lại sau.\"), (\"error.rateLimited\", \"Bạn thao tác quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpAttemptsExceeded\", \"Bạn đã nhập sai mã quá số lần cho phép. Vui lòng thử lại sau.\"), (\"error.sessionUnavailable\", \"Không khởi tạo được phiên xác minh. Vui lòng đóng và thử lại.\"), (\"error.sessionInvalid\", \"Phiên xác minh không còn hiệu lực. Vui lòng đóng và thử lại.\"), (\"error.unknown\", \"Đã xảy ra lỗi không xác định. Vui lòng thử lại sau.\"), (\"error.code\", \"Mã lỗi: {code}\"), (\"action.close\", \"Đóng\"), (\"confirm.exit.required\", \"Bạn cần hoàn tất xác minh để vào game. Thoát game?\"), (\"confirm.exit.optional\", \"Thông tin bạn đã nhập sẽ không được lưu. Đóng?\"), (\"success\", \"Xác minh thành công\")]"
     }
   ]
 }

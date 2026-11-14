@@ -86,8 +86,14 @@ public final class AlogameKycUnityBridge {
                             listener.onResult("failed", failed.getReason().name(), failed.getMessage());
                         } else if (result instanceof AlogameKycResult.Cancelled) {
                             listener.onResult("cancelled", null, null);
-                        } else {
+                        } else if (result instanceof AlogameKycResult.ExitRequested) {
+                            // The native SDK closes the game ~0.5 s after this.
+                            listener.onResult("exitRequested", null, null);
+                        } else if (result instanceof AlogameKycResult.Success) {
                             listener.onResult("success", null, null);
+                        } else {
+                            // Never report an unknown case as success.
+                            listener.onResult("failed", "unknownError", null);
                         }
                     }
 

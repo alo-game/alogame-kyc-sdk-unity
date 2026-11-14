@@ -30,7 +30,9 @@ namespace Alogame.KycSdk
     ///
     /// No value means "not old enough": under-age is a storage rule enforced
     /// inside the screen, and a player who abandons there ends with
-    /// <see cref="AlogameKycResult.Cancelled"/> like any other abandoned form.
+    /// <see cref="AlogameKycResult.Cancelled"/> (optional mode) or
+    /// <see cref="AlogameKycResult.ExitRequested"/> (mandatory mode) like any
+    /// other abandoned form.
     /// No value means "temporary network error" either — that is always
     /// recoverable inside the screen and never reaches OnResult.
     /// </summary>
@@ -68,7 +70,7 @@ namespace Alogame.KycSdk
     /// Mirrors the Kotlin sealed class / Swift enum. The private constructor plus
     /// nested subclasses makes the hierarchy genuinely closed — a C# nested type
     /// may call its enclosing type's private constructor, but nothing outside can,
-    /// so no fourth case can be declared elsewhere.
+    /// so no fifth case can be declared elsewhere.
     ///
     /// No PII rides on any branch: a game gets a status and, on failure, a closed
     /// reason it can switch on, nothing more.
@@ -79,7 +81,16 @@ namespace Alogame.KycSdk
 
         public sealed class Success : AlogameKycResult { }
 
+        /// <summary>The player closed an optional form. The game continues as normal.</summary>
         public sealed class Cancelled : AlogameKycResult { }
+
+        /// <summary>
+        /// The player tapped "Thoát game" in mandatory mode and confirmed. The
+        /// native SDK closes the game itself about 0.5 s after this arrives, so
+        /// only do quick, synchronous work here, such as logging. Never let the
+        /// player into the game on this result.
+        /// </summary>
+        public sealed class ExitRequested : AlogameKycResult { }
 
         public sealed class Failed : AlogameKycResult
         {
@@ -103,7 +114,8 @@ namespace Alogame.KycSdk
                     ? "Failed(" + f.Reason + ")"
                     : "Failed(" + f.Reason + ", " + f.Message + ")";
             }
-            return this is Success ? "Success" : "Cancelled";
+            if (this is Success) return "Success";
+            return this is ExitRequested ? "ExitRequested" : "Cancelled";
         }
 
         /// <summary>
@@ -120,6 +132,8 @@ namespace Alogame.KycSdk
                     return new Success();
                 case "cancelled":
                     return new Cancelled();
+                case "exitRequested":
+                    return new ExitRequested();
                 case "failed":
                     return new Failed(ParseReason(reason), message);
                 default:

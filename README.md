@@ -22,10 +22,10 @@ green console proves nothing.
 Package Manager → **+** → **Add package from git URL**:
 
 ```
-https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.5
+https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.2.0
 ```
 
-Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.1.5`). While iterating locally,
+Pin a tag once one exists (`https://github.com/alo-game/alogame-kyc-sdk-unity.git#0.2.0`). While iterating locally,
 **Add package from disk** pointed at this `unity/` folder works too and makes the
 package mutable.
 
@@ -67,7 +67,8 @@ class MyListener : AlogameKycListener
         switch (result)
         {
             case AlogameKycResult.Success _:   /* verified */ break;
-            case AlogameKycResult.Cancelled _: /* player backed out */ break;
+            case AlogameKycResult.Cancelled _: /* player closed an optional form */ break;
+            case AlogameKycResult.ExitRequested _: /* "Thoát game": the SDK closes the game ~0.5 s later */ break;
             case AlogameKycResult.Failed f:    Debug.LogWarning(f.Reason); break;
         }
     }

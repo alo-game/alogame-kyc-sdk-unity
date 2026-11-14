@@ -43,6 +43,9 @@ final class AlogameKycUnityBridge: AlogameKycListener {
             send(["event": "onResult", "status": "success"])
         case .cancelled:
             send(["event": "onResult", "status": "cancelled"])
+        case .exitRequested:
+            // The native SDK terminates the app ~0.5 s after this.
+            send(["event": "onResult", "status": "exitRequested"])
         case .failed(let reason, let message):
             var payload: [String: Any] = [
                 "event": "onResult",
