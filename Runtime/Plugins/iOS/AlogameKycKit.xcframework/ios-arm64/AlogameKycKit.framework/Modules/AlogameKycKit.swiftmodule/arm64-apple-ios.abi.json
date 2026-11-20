@@ -3481,823 +3481,844 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 29,
       "value": "\"AlogameKycKit_AlogameKycKit\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 983,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1510,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/.build\/xcframework-build\/derived-device\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AlogameKycKit\/IntermediateBuildFilesPath\/AlogameKycKit.build\/Release-iphoneos\/AlogameKycKit-t.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1662,
       "length": 57,
       "value": "\"unable to find bundle named AlogameKycKit_AlogameKycKit\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 671,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 1087,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2068,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2088,
       "length": 18,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2116,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2140,
       "length": 19,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2169,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2193,
       "length": 11,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2214,
       "length": 18,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycFailReason.swift",
       "kind": "IntegerLiteral",
       "offset": 2242,
       "length": 12,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
       "kind": "IntegerLiteral",
       "offset": 1349,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
       "kind": "IntegerLiteral",
       "offset": 1365,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycResult.swift",
       "kind": "IntegerLiteral",
       "offset": 1384,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 2055,
+      "offset": 2526,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
       "kind": "FloatLiteral",
-      "offset": 2373,
+      "offset": 2844,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/AlogameKycSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 2482,
+      "offset": 2953,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
       "kind": "IntegerLiteral",
       "offset": 1766,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowController.swift",
       "kind": "BooleanLiteral",
       "offset": 1795,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 827,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 859,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 960,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2261,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2309,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 2369,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Dictionary",
       "offset": 2543,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Array",
       "offset": 2765,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 2792,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "StringLiteral",
       "offset": 2980,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "Array",
       "offset": 3019,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "IntegerLiteral",
       "offset": 3571,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Flow\/FlowState.swift",
       "kind": "BooleanLiteral",
       "offset": 4256,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Security\/CaptureGuard.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Security\/CaptureGuard.swift",
       "kind": "Array",
       "offset": 1210,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
       "kind": "IntegerLiteral",
       "offset": 1226,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/Session\/TokenBroker.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/ConsentView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/ConsentView.swift",
       "kind": "Dictionary",
       "offset": 936,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 1878,
       "length": 8,
       "value": "\"0B0B0E\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2011,
       "length": 8,
       "value": "\"17171D\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2137,
       "length": 8,
       "value": "\"0F0F14\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2255,
       "length": 8,
       "value": "\"2A2A33\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2385,
       "length": 8,
       "value": "\"22222B\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2511,
       "length": 8,
       "value": "\"121217\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2627,
       "length": 8,
       "value": "\"3A3A45\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2729,
       "length": 8,
       "value": "\"5B5F70\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2828,
       "length": 8,
       "value": "\"1D64F2\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 2947,
       "length": 8,
       "value": "\"4C8CFF\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3047,
       "length": 8,
       "value": "\"E7E8ED\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3151,
       "length": 8,
       "value": "\"8B8FA0\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3280,
       "length": 8,
       "value": "\"C9CBD4\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3329,
       "length": 8,
       "value": "\"1D64F2\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3433,
       "length": 8,
       "value": "\"E5484D\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "StringLiteral",
       "offset": 3561,
       "length": 8,
       "value": "\"28C76F\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3650,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3702,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3758,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3829,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 3897,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4042,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4248,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4547,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 4984,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5058,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5127,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 5203,
       "length": 3,
       "value": "9.5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5359,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5488,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5642,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5735,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5809,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 5883,
       "length": 4,
       "value": "12.5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 5969,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 6045,
       "length": 4,
       "value": "12.5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "FloatLiteral",
       "offset": 6124,
       "length": 4,
       "value": "14.5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6200,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6273,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6369,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6416,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6820,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6863,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6904,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6943,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 6980,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7017,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7055,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7094,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7306,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7348,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7388,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
       "offset": 7429,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7472,
+      "offset": 7610,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7654,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7518,
+      "offset": 7700,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7559,
+      "offset": 7741,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7603,
+      "offset": 7785,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7650,
+      "offset": 7832,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 7921,
+      "offset": 8103,
       "length": 3,
       "value": "880"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 9736,
+      "offset": 9918,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 9742,
+      "offset": 9924,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 9781,
+      "offset": 9963,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "IntegerLiteral",
-      "offset": 9787,
+      "offset": 9969,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/DesignTokens.swift",
       "kind": "BooleanLiteral",
-      "offset": 13336,
+      "offset": 14320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "IntegerLiteral",
       "offset": 4282,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "StringLiteral",
       "offset": 4472,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "StringLiteral",
       "offset": 4581,
       "length": 18,
       "value": "\"Asia\/Ho_Chi_Minh\""
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/FormView.swift",
       "kind": "Array",
-      "offset": 22261,
+      "offset": 22522,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2537,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "Array",
       "offset": 2605,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2685,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/KycViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3846,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "Array",
       "offset": 1038,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "BooleanLiteral",
       "offset": 1283,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/OtpView.swift",
       "kind": "IntegerLiteral",
       "offset": 1357,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/alogame-kyc-sdk\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
       "kind": "Dictionary",
-      "offset": 778,
-      "length": 4448,
-      "value": "[(\"title\", \"Xác minh danh tính\"), (\"badge.required\", \"BẮT BUỘC\"), (\"reason.required\", \"Vui lòng hoàn thành xác minh danh tính trước khi vào game. Thông tin của bạn chỉ dùng để định danh tài khoản theo quy định.\"), (\"reason.required.compact\", \"Hoàn thành xác minh trước khi vào game. Chỉ mất khoảng 1 phút.\"), (\"reason.optional\", \"Xác minh danh tính theo quy định hiện hành.\"), (\"field.fullName.label\", \"HỌ VÀ TÊN\"), (\"field.fullName.hint\", \"Đúng như trên CCCD\/hộ chiếu\"), (\"field.fullName.placeholder\", \"Họ và tên theo CCCD *\"), (\"field.dob.label\", \"NGÀY SINH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Ngày sinh (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"SỐ ĐIỆN THOẠI\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Số điện thoại *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (không bắt buộc)\"), (\"action.sendCode\", \"Gửi mã\"), (\"action.sendCode.disabled\", \"Số điện thoại chưa hợp lệ.\"), (\"action.save\", \"Xác minh và vào game\"), (\"action.retry\", \"Thử lại\"), (\"action.exitGame\", \"Thoát game\"), (\"action.changePhone\", \"Đổi số\"), (\"action.pasteCode\", \"Dán mã\"), (\"action.done\", \"Xong\"), (\"action.resend\", \"Gửi lại mã\"), (\"action.resend.countdown\", \"Gửi lại mã ({seconds}s)\"), (\"otp.title\", \"Nhập mã xác minh\"), (\"otp.sentTo\", \"Mã đã gửi tới {phone}\"), (\"otp.incorrect\", \"Mã không đúng. Còn {n} lần thử.\"), (\"otp.expired\", \"Mã đã hết hạn. Vui lòng gửi lại.\"), (\"otp.exhausted\", \"Bạn đã gửi lại mã tối đa số lần cho phép.\"), (\"otp.support\", \"Không nhận được mã? Liên hệ hỗ trợ\"), (\"consent.parent\", \"Tôi đã đọc và đồng ý với các điều khoản\"), (\"error.consentRequired\", \"Cần đồng ý điều khoản để tiếp tục.\"), (\"error.underAge\", \"Dịch vụ dành cho người từ {minimumAge} tuổi trở lên, nên thông tin của bạn không được lưu.\"), (\"error.phoneTaken\", \"Số điện thoại này đã được liên kết với một tài khoản khác trong game.\"), (\"error.network\", \"Không có kết nối mạng.\"), (\"error.service\", \"Không kết nối được hệ thống xác minh.\"), (\"error.otpRateLimited\", \"Bạn đã yêu cầu mã quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpUnavailable\", \"Chưa gửi được mã xác minh lúc này. Vui lòng thử lại sau.\"), (\"error.rateLimited\", \"Bạn thao tác quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpAttemptsExceeded\", \"Bạn đã nhập sai mã quá số lần cho phép. Vui lòng thử lại sau.\"), (\"error.sessionUnavailable\", \"Không khởi tạo được phiên xác minh. Vui lòng đóng và thử lại.\"), (\"error.sessionInvalid\", \"Phiên xác minh không còn hiệu lực. Vui lòng đóng và thử lại.\"), (\"error.unknown\", \"Đã xảy ra lỗi không xác định. Vui lòng thử lại sau.\"), (\"error.code\", \"Mã lỗi: {code}\"), (\"action.close\", \"Đóng\"), (\"confirm.exit.required\", \"Bạn cần hoàn tất xác minh để vào game. Thoát game?\"), (\"confirm.exit.optional\", \"Thông tin bạn đã nhập sẽ không được lưu. Đóng?\"), (\"success\", \"Xác minh thành công\")]"
+      "offset": 790,
+      "length": 4907,
+      "value": "[(\"title\", \"Xác minh danh tính\"), (\"badge.required\", \"BẮT BUỘC\"), (\"reason.required\", \"Vui lòng hoàn thành xác minh danh tính trước khi vào game. Thông tin của bạn chỉ dùng để định danh tài khoản theo quy định.\"), (\"reason.required.compact\", \"Hoàn thành xác minh trước khi vào game. Chỉ mất khoảng 1 phút.\"), (\"reason.optional\", \"Xác minh danh tính theo quy định hiện hành.\"), (\"field.fullName.label\", \"HỌ VÀ TÊN\"), (\"field.fullName.hint\", \"Đúng như trên CCCD\/hộ chiếu\"), (\"field.fullName.placeholder\", \"Họ và tên theo CCCD *\"), (\"field.dob.label\", \"NGÀY SINH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Ngày sinh (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"SỐ ĐIỆN THOẠI\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Số điện thoại *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (không bắt buộc)\"), (\"action.sendCode\", \"Gửi mã\"), (\"action.sendCode.disabled\", \"Số điện thoại chưa hợp lệ.\"), (\"action.save\", \"Xác minh và vào game\"), (\"action.retry\", \"Thử lại\"), (\"action.exitGame\", \"Thoát game\"), (\"action.changePhone\", \"Đổi số\"), (\"action.pasteCode\", \"Dán mã\"), (\"action.done\", \"Xong\"), (\"action.resend\", \"Gửi lại mã\"), (\"action.resend.countdown\", \"Gửi lại mã ({seconds}s)\"), (\"otp.title\", \"Nhập mã xác minh\"), (\"otp.sentTo\", \"Mã đã gửi tới {phone}\"), (\"otp.incorrect\", \"Mã không đúng. Còn {n} lần thử.\"), (\"otp.expired\", \"Mã đã hết hạn. Vui lòng gửi lại.\"), (\"otp.exhausted\", \"Bạn đã gửi lại mã tối đa số lần cho phép.\"), (\"otp.support\", \"Không nhận được mã? Liên hệ hỗ trợ\"), (\"consent.parent\", \"Tôi đã đọc và đồng ý với các điều khoản\"), (\"error.consentRequired\", \"Cần đồng ý điều khoản để tiếp tục.\"), (\"error.underAge\", \"Dịch vụ dành cho người từ {minimumAge} tuổi trở lên, nên thông tin của bạn không được lưu.\"), (\"error.phoneTaken\", \"Số điện thoại này đã được liên kết với một tài khoản khác trong game.\"), (\"error.network\", \"Không có kết nối mạng.\"), (\"error.service\", \"Không kết nối được hệ thống xác minh.\"), (\"error.otpRateLimited\", \"Bạn đã yêu cầu mã quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpUnavailable\", \"Chưa gửi được mã xác minh lúc này. Vui lòng thử lại sau.\"), (\"error.rateLimited\", \"Bạn thao tác quá nhiều lần. Vui lòng thử lại sau ít phút.\"), (\"error.otpAttemptsExceeded\", \"Bạn đã nhập sai mã quá số lần cho phép. Vui lòng thử lại sau.\"), (\"error.sessionUnavailable\", \"Không khởi tạo được phiên xác minh. Vui lòng đóng và thử lại.\"), (\"error.sessionInvalid\", \"Phiên xác minh không còn hiệu lực. Vui lòng đóng và thử lại.\"), (\"error.unknown\", \"Đã xảy ra lỗi không xác định. Vui lòng thử lại sau.\"), (\"error.code\", \"Mã lỗi: {code}\"), (\"status.reconnecting\", \"Đang kết nối lại, vui lòng chờ…\"), (\"action.close\", \"Đóng\"), (\"action.skip\", \"Bỏ qua\"), (\"action.cancel\", \"Huỷ\"), (\"confirm.exit.required\", \"Bạn cần hoàn tất xác minh để vào game. Thoát game?\"), (\"confirm.exit.optional\", \"Thông tin bạn đã nhập sẽ không được lưu. Bỏ qua?\"), (\"success\", \"Xác minh thành công\")]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
+      "kind": "Dictionary",
+      "offset": 5745,
+      "length": 3424,
+      "value": "[(\"title\", \"Identity verification\"), (\"badge.required\", \"REQUIRED\"), (\"reason.required\", \"Please complete identity verification before entering the game. Your information is only used to identify your account, as required by law.\"), (\"reason.required.compact\", \"Complete verification before entering the game. It only takes about a minute.\"), (\"reason.optional\", \"Identity verification as required by current regulations.\"), (\"field.fullName.label\", \"FULL NAME\"), (\"field.fullName.hint\", \"Exactly as on your ID card or passport\"), (\"field.fullName.placeholder\", \"Full name as on your ID *\"), (\"field.dob.label\", \"DATE OF BIRTH\"), (\"field.dob.hint\", \"DD\/MM\/YYYY\"), (\"field.dob.placeholder\", \"Date of birth (DD\/MM\/YYYY) *\"), (\"field.phone.label\", \"PHONE NUMBER\"), (\"field.phone.hint\", \"09xx xxx xxx\"), (\"field.phone.placeholder\", \"Phone number *\"), (\"field.email.label\", \"EMAIL\"), (\"field.email\", \"Email (optional)\"), (\"action.sendCode\", \"Send code\"), (\"action.sendCode.disabled\", \"The phone number is not valid.\"), (\"action.save\", \"Verify and enter game\"), (\"action.retry\", \"Retry\"), (\"action.exitGame\", \"Quit game\"), (\"action.changePhone\", \"Change number\"), (\"action.pasteCode\", \"Paste code\"), (\"action.done\", \"Done\"), (\"action.resend\", \"Resend code\"), (\"action.resend.countdown\", \"Resend code ({seconds}s)\"), (\"otp.title\", \"Enter verification code\"), (\"otp.sentTo\", \"Code sent to {phone}\"), (\"otp.incorrect\", \"Incorrect code. {n} attempts left.\"), (\"otp.expired\", \"The code has expired. Please request a new one.\"), (\"otp.exhausted\", \"You have reached the resend limit.\"), (\"otp.support\", \"Didn't get the code? Contact support\"), (\"consent.parent\", \"I have read and agree to the terms\"), (\"error.consentRequired\", \"You need to agree to the terms to continue.\"), (\"error.underAge\", \"This service is for users aged {minimumAge} and over, so your information was not saved.\"), (\"error.phoneTaken\", \"This phone number is already linked to another account in this game.\"), (\"error.network\", \"No network connection.\"), (\"error.service\", \"Could not reach the verification service.\"), (\"error.otpRateLimited\", \"You have requested a code too many times. Please try again in a few minutes.\"), (\"error.otpUnavailable\", \"The verification code could not be sent right now. Please try again later.\"), (\"error.rateLimited\", \"Too many attempts. Please try again in a few minutes.\"), (\"error.otpAttemptsExceeded\", \"Too many incorrect codes. Please try again later.\"), (\"error.sessionUnavailable\", \"Could not start a verification session. Please close and try again.\"), (\"error.sessionInvalid\", \"This verification session is no longer valid. Please close and try again.\"), (\"error.unknown\", \"Something went wrong. Please try again later.\"), (\"error.code\", \"Error code: {code}\"), (\"status.reconnecting\", \"Reconnecting, please wait…\"), (\"action.close\", \"Close\"), (\"action.skip\", \"Skip\"), (\"action.cancel\", \"Cancel\"), (\"confirm.exit.required\", \"You need to finish verification to enter the game. Quit game?\"), (\"confirm.exit.optional\", \"The information you entered will not be saved. Skip?\"), (\"success\", \"Verified\")]"
+    },
+    {
+      "filePath": "\/Users\/thohd\/Dev\/OEG-Workspace\/Workspace\/.worktrees\/kyc-release\/ios\/Sources\/AlogameKycSdk\/Internal\/UI\/Strings.swift",
+      "kind": "Array",
+      "offset": 9888,
+      "length": 2,
+      "value": "[]"
     }
   ]
 }

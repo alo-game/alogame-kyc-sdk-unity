@@ -522,7 +522,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AlogameKycSd
 /// bridge itself (<code>onResult</code> carries <code>AlogameKycResult</code>, an enum with
 /// associated values), so this wraps <code>objcListener</code> in
 /// <code>ObjcListenerAdapter</code> and calls the exact same <code>show(from:listener:)</code>
-/// above. No behavior lives here beyond that translation.
+/// above, and owns the adapter until the result is delivered.
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController objcListener:(id <AlogameKycObjcListener> _Nonnull)objcListener;
 @end
 
@@ -1058,7 +1058,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AlogameKycSd
 /// bridge itself (<code>onResult</code> carries <code>AlogameKycResult</code>, an enum with
 /// associated values), so this wraps <code>objcListener</code> in
 /// <code>ObjcListenerAdapter</code> and calls the exact same <code>show(from:listener:)</code>
-/// above. No behavior lives here beyond that translation.
+/// above, and owns the adapter until the result is delivered.
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController objcListener:(id <AlogameKycObjcListener> _Nonnull)objcListener;
 @end
 
